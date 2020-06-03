@@ -251,3 +251,11 @@ body.offcanvas-active{
     list-style: none;
     padding: 0;
 }
+
+.table-item > button {
+    border-radius: 5px;
+    /* padding: 10px 30px; */
+    font-size: 1.1rem;
+    position: relative;
+    top: 18px;
+}
