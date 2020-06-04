@@ -12,6 +12,9 @@
     --bg-top-header: rgb(215, 116, 0);
     --color-light: rgb(255, 255, 255);
     --accent-color: rgb(215, 116, 0);
+    --color-paragraph: rgb(102, 102, 102);
+
+    --main-transition: all 0.5s ease;
 }
 
 html body {
@@ -80,9 +83,6 @@ html body {
     text-transform: uppercase;
 }
 
-/* .btn:focus {
-    outline: 2px dotted #55d7dc;
-} */
 
 .btn-main {
     font-size: 1rem;
@@ -90,6 +90,7 @@ html body {
     text-decoration: none;
     border: none;
     border-radius: 0;
+    outline: none;
     }
 
 .btn-accent {
@@ -100,10 +101,18 @@ html body {
 
 .btn-accent:hover {
     background: none repeat scroll 0 0 #038303;
-    transition: all 0.5s;
+    transition: var(--main-transition);
 }
 
 /* Button */
+
+/* Sections base style */
+
+.main-container {
+    padding: 80px 0 105px;
+}
+
+/* Sections base style */
 
 /* header */
 body.offcanvas-active{
@@ -184,7 +193,7 @@ body.offcanvas-active{
     .navbar ul > li > a:hover {
         background: var(--color-light);
         color: var(--accent-color);
-        transition: all 0.5s;
+        transition: var(--main-transition);
     }
 }
 
@@ -195,7 +204,7 @@ body.offcanvas-active{
     .navbar ul > li:hover, .navbar ul > li > a:hover {
         border-bottom: 1px solid var(--accent-color);
         color: var(--accent-color);
-        transition: all 0.5s;
+        transition: var(--main-transition);
     }
 
     .navbar-nav {
@@ -218,12 +227,23 @@ body.offcanvas-active{
     max-height: 550px;
 }
 
+@media only screen and (max-width: 768px) {
+    .intro .main-img {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
 /*Intro section*/
 
 /*Service section*/
 
 .title-container .title {
     font-size: 4rem;
+}
+
+.title-container .subtitle {
+    color: var(--color-paragraph);
 }
 
 .text-light {
@@ -235,13 +255,11 @@ body.offcanvas-active{
 .trachining-section {
     background: url(../img/images/bg-teaching.png) no-repeat;
     background-size: cover;
-    display: block;
     text-align: center;
-    padding: 80px 0 105px;
 }
 
 .table-item {
-    background: #fff;
+    background: rgb(255, 255, 255);
     border-radius: 5px;
     padding-top: 30px;
     padding-bottom: 10px;
@@ -254,8 +272,188 @@ body.offcanvas-active{
 
 .table-item > button {
     border-radius: 5px;
-    /* padding: 10px 30px; */
     font-size: 1.1rem;
     position: relative;
     top: 18px;
 }
+
+.table-item > ul > li {
+    color: var(--color-paragraph);
+}
+
+.table-item b {
+    color: var(--color-paragraph);
+}
+
+.trachining-section .start-course h3 {
+    color: #45c9eb;
+}
+
+.trachining-section .start-course .btn-main {
+    background-color: #45c9eb;
+}
+
+.trachining-section .basic-course h3 {
+    color: #ffae00;
+}
+
+.trachining-section .basic-course .btn-main {
+    background-color: #ffae00;
+}
+
+.trachining-section .qualifications-up h3 {
+    color: #e53099;
+}
+
+.trachining-section .qualifications-up .btn-main {
+    background-color:  #e53099;
+}
+
+
+/* Footer-section */
+
+.footer-section {
+    padding: 30px 0 10px 0;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(180deg, #090810 0%, #171236 100%);
+    color: var(--color-light);
+}
+
+.footer-section ul {
+    list-style: none;
+    justify-content: space-around;
+}
+
+.footer-section .social-media {
+    line-height: 30px;
+    color: var(--color-paragraph);
+    font-size: 13px;
+    padding: 0;
+}
+
+.footer-section .social-media li {
+    text-align: center;
+    border: medium none;
+    border-radius: 50%;
+    display: inline-block;
+    background-color: transparent;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    margin: 0 3px 0;
+    position: relative;
+    height: 35px;
+    width: 35px;
+    border: 2px solid #808080;
+}
+
+/* .footer-section .social-media li a {
+    font-weight: 400;
+    line-height: 30px;
+    color: #999999;
+    font-size: 13px;
+} */
+
+.footer-section .social-media li a img {
+    width: 20px;
+    height: 20px;
+}
+
+.footer-section .social-media li:hover {
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    border-color: #d77400;
+}
+
+.footer-section .social-media li a:hover, .footer-section .social-media li a:focus {
+    color: #d77400;
+    background-position: 0 -23px;
+}
+
+.footer-section .social-media li a:hover a::before {
+    color: #d77400;
+}
+
+/* .tfacesocial_inner li.facebook a::before {
+    content:  url('../img/icons/open-menu.svg');
+} */
+
+.footer-section .social-media li a::before {
+    font-size: 15px;
+    /* font-family: "FontAwesome"; */
+    background-image: url('../img/icons/open-menu.svg');
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    font-weight: 400;
+    color: #808080;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    top: 0;
+    position: absolute;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    text-align: center;
+}
+
+.footer-section .copyright ul li a {
+    color: var(--color-light);
+}
+
+.footer-section .copyright ul li a:hover {
+    color: var(--accent-color);
+    transition: var(--main-transition);
+    text-decoration: none;
+}
+
+.footer-section .copyright span {
+    color: var(--color-paragraph);
+    font-size: 14px;
+}
+
+/* .top_button {
+    position: fixed;
+    border: 1px solid #a0a0a0;
+    border-radius: 100%;
+    width: 40px;
+    height: 40px;
+    line-height: 35px;
+    right: 20px;
+    bottom: 50px;
+    font-size: 14px;
+    color: #d77400;
+    display: none;
+    z-index: 2;
+    transition: all .3s ease;
+    text-align: center;
+} */
+
+/* .top-button a span {
+    position:absolute;
+    top:50%;
+    left:50%;
+    margin-left:-8px;
+    margin-top:-12px;
+    height:0;
+    width:0;
+    border:8px solid transparent;
+    border-bottom-color:#ffffff;
+}
+
+.top-button a::after {
+    content: "";
+    background-image: url('../img/icons/up-arrow.svg');
+}
+
+.top-button:hover {
+    background-color:#e74c3c;
+    opacity:1;filter:"alpha(opacity=100)";
+    -ms-filter:"alpha(opacity=100)";
+} */
+
+/* Footer-section */
