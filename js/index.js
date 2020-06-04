@@ -1,6 +1,5 @@
 new ProductList(new Cart());
 
-
 $(function () {
 
 

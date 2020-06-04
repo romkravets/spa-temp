@@ -1,8 +1,8 @@
 class ProductList {
   constructor(cart) {
     this.cart = cart;
-    this.modal = document.querySelector('#productInfoModal');
-    this.modalImages = document.querySelector('.works-slideshow');
+    // this.modal = document.querySelector('#productInfoModal');
+    // this.modalImages = document.querySelector('.works-slideshow');
     this.container = document.querySelector('.products-container-one');
     this.containerTwo = document.querySelector('.products-container-two');
 
@@ -66,7 +66,7 @@ class ProductList {
       );
     document
       .querySelectorAll(
-        '#productInfoModal a.buy, .card.product img.buy'
+        '#productInfoModal a.buy, .card.product button.buy'
       )
       .forEach(button =>
         button.addEventListener('click', event => {
@@ -87,25 +87,25 @@ class ProductList {
     const id = button.dataset.id; // Extract info from data-* attributes
     const product = await this.productService.getProductById(id);
 
-    let productImageString = '';
+    // let productImageString = '';
 
-    product.image.forEach((img, index) => {
+    // product.image.forEach((img, index) => {
 
-      productImageString += `
-      <div class="detail-screen-carousel-item">
-      <div class="item-preview">
-          <img class="card-img-top gallery-image" src="img/products/${img}" alt="${product.title}">
-      </div>
-        </div>
-      `
-    });
+    //   productImageString += `
+    //   <div class="detail-screen-carousel-item">
+    //   <div class="item-preview">
+    //       <img class="card-img-top gallery-image" src="img/products/${img}" alt="${product.title}">
+    //   </div>
+    //     </div>
+    //   `
+    // });
 
-    this.modalImages.innerHTML = productImageString;
-    this.modal.querySelector('.modal-body .card-title').innerText = product.title;
-    this.modal.querySelector('.modal-body .card-text').innerText = product.description;
-    const btnBuy = this.modal.querySelector('a.buy');
-    btnBuy.innerText = `Оформить заказ`
-    btnBuy.dataset.id = id;
+    // this.modalImages.innerHTML = productImageString;
+    // this.modal.querySelector('.modal-body .card-title').innerText = product.title;
+    // this.modal.querySelector('.modal-body .card-text').innerText = product.description;
+    // const btnBuy = this.modal.querySelector('a.buy');
+    // btnBuy.innerText = `Оформить заказ`
+    // btnBuy.dataset.id = id;
   }
   handleProductBuyClick(event) {
     const button = event.target;
