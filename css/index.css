@@ -95,6 +95,11 @@ html body {
     padding: 8px 20px;
 }
 
+.btn-service {
+    padding: 8px 10px;
+    text-transform: uppercase;
+}
+
 /* Button */
 
 /* Sections base style */
@@ -227,8 +232,7 @@ body.offcanvas-active{
 
 /*Intro section*/
 
-/*Service section*/
-
+/* Title container */
 .title-container .title {
     font-size: 4rem;
 }
@@ -239,6 +243,39 @@ body.offcanvas-active{
 
 .text-light {
     color: var(--color-light);
+}
+/* Title container */
+
+/*Service section*/
+
+.services-img-small {
+    width: 200px;
+    height: 200px;
+}
+
+.services h3 {
+    font-size: 30px;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+.services .title-service {
+    font-size: 20px;
+    text-transform: uppercase;
+    color: var(--color-paragraph);
+    padding-bottom: 40px;
+}
+
+.services p {
+    color: var(--color-paragraph);
+    line-height: 20px;
+}
+
+.services .bg-service-dark {
+    background: linear-gradient(180deg, #090810 0%, #171236 100%);
+}
+
+.services .service {
+    background: var(--color-light);
 }
 
 /*Service section*/

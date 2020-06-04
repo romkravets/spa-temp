@@ -36,8 +36,7 @@ class ProductList {
                   <div class="card product">
                     ${messageSaleOrNew}
                     <img class="card-img-top card-info-cursor" src="img/products/${product.image[0]}"
-                        alt="${product.title}" data-toggle="modal"
-                        data-target="#productInfoModal" data-id="${product.id}">
+                        alt="${product.title}">
                       <div class="card-body d-flex flex-column align-items-start justify-content-between title-wrap">
                         <div class="d-flex w-100 align-items-baseline">
                         <div class="card-price flex-fill d-flex flex-wrap">
