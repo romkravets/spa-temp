@@ -253,8 +253,13 @@ body.offcanvas-active{
     height: 200px;
 }
 
+.services h2 {
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
 .services h3 {
-    font-size: 30px;
+    font-size: 22px;
     display: inline-block;
     margin-bottom: 10px;
 }
