@@ -22,19 +22,6 @@ html body {
     background: var(--bg-body);
 }
 
-.card {
-    height: 100%;
-}
-
-.alert {
-    position: fixed;
-    top: 50px;
-    width: 50%;
-    left: 25%;
-    z-index: 1051;
-}
-
-
 /* Button */
 .draw-border {
     box-shadow: inset 0 0 0 4px rgb(88, 175, 209);
@@ -457,3 +444,33 @@ body.offcanvas-active{
 } */
 
 /* Footer-section */
+
+/* Prodact section */
+
+
+.card {
+    height: 100%;
+}
+
+.card .card-title {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.prod {
+    display: none;
+}
+
+.medicafarm {
+    display: block;
+}
+
+.alert {
+    position: fixed;
+    top: 50px;
+    width: 50%;
+    left: 25%;
+    z-index: 1051;
+}
+
+/* Product section */
