@@ -91,6 +91,10 @@ html body {
     transition: var(--main-transition);
 }
 
+.btn-product {
+    padding: 8px 20px;
+}
+
 /* Button */
 
 /* Sections base style */
@@ -452,17 +456,90 @@ body.offcanvas-active{
     height: 100%;
 }
 
+.card:hover {
+    box-shadow: 0 5px 10px 0 rgba(0,0,0,.2);
+    transition: var(--main-transition);
+}
+
+/* .title-wrap {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    background: #ffffff;
+    border-radius: 5px;
+}
+
+.title-width {
+    width: 95%;
+} */
+
 .card .card-title {
-    font-size: 14px;
+    font-size: 18px;
     font-weight: 400;
+    margin: 10px 0 0 0;
+    height: 80px;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+
+.card .card-title::after {
+    content: '';
+    height: 44px;
+    left: 0;
+    right: 0;
+    position: absolute;
+    bottom: 0;
+    background: -webkit-linear-gradient(top,rgba(255,255,255,0),#fff 100%,#fff 10%,#fff);
+    background: -ms-linear-gradient(top,rgba(255,255,255,0),#fff 100%,#fff 10%,#fff);
+    background: linear-gradient("to bottom",rgba(255,255,255,0),#fff 100%,#fff 10%,#fff);
 }
 
 .prod {
     display: none;
 }
 
+.card .card-body {
+    padding: 10px;
+}
+
 .medicafarm {
     display: block;
+}
+
+.nav-tabs {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: none;
+}
+
+.nav-tabs .nav-item {
+    border: 1px solid transparent;
+    min-height: 100px;
+}
+
+.nav-tabs .nav-link {
+    display: initial;
+    padding: 40px;
+}
+
+.nav-tabs .nav-link img {
+    max-width: 200px;
+}
+
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+    border-color: transparent;
+    color: transparent;
+    background-color: transparent;
+}
+
+/* .nav-tabs .nav-item:hover {
+    border: 1px solid var(--accent-color);
+} */
+
+.nav-tabs .nav-link:focus, .nav-tabs .nav-link:hover {
+    border-color: transparent;
 }
 
 .alert {
