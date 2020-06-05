@@ -1,0 +1,35 @@
+[
+   {
+       "id": "1",
+       "title": "Масаж з нуля",
+       "image": ["medicafarm-gel-dlya-ukhoda-travma-k-s-arnikoj-protiv-otekov-i-gematom-125-ml_1.jpg"],
+       "description": "",
+       "price": 2000,
+       "new": false,
+       "sale": false,
+       "category": "start-course",
+       "priceSale": ""
+   },
+   {
+       "id": "2",
+       "title": "Базовий рівень",
+       "image": ["medicafarm-gel-dlya-ukhoda-ruma-k-s-garpagofitumom-i-progrevaniem-intensivnyj-razogrev-125-ml.jpg"],
+       "description": "",
+       "price": 5000,
+       "new": false,
+       "sale": false,
+       "category": "basic-course",
+       "priceSale": ""
+   },
+   {
+      "id": "3",
+      "title": "Підвищення кваліфікації",
+      "image": ["medicafarm-gel-dlya-ukhoda-travma-k-s-arnikoj-protiv-otekov-i-gematom-125-ml_1.jpg"],
+      "description": "",
+      "price": 3000,
+      "new": false,
+      "sale": false,
+      "category": "qualifications-up",
+      "priceSale": ""
+  }
+]
