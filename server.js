@@ -24,6 +24,18 @@ app.post('/order', (req, res) => {
   });
 });
 
+app.post('/order-teach', (req, res) => {
+  const fs = require('fs');
+  fs.appendFile('./order-teach.txt', JSON.stringify(req.body) + '\n', function(err) {
+    if (err) {
+      res.status(500).send('Server error');
+      return console.log(err);
+    }
+    console.log('Data saved: ' + JSON.stringify(req.body));
+    res.send('Data saved');
+  });
+});
+
 console.log(
   'Server is running on',
   process.env.PORT || 3000,

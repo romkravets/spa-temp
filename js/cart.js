@@ -1,6 +1,6 @@
 class Cart {
   constructor() {
-    this.cartContainer = document.querySelector('#modal-cart');
+    this.cartContainer = document.querySelector('#modal-products');
     this.cart = {};
     this.addEventListeners();
     this.productService = new ProductsService();
@@ -15,11 +15,15 @@ class Cart {
     for (const id in this.cart) {
       const product = await this.productService.getProductById(id);
       cartDomSting += `
-                <div class="" data-id="${id}">
+                <div class="row" data-id="${id}">
+                <div class="col-5">
                     <img class="card-img-top card-img-description" src="img/products/${product.image[0]}">
-                <div class="text-center mt-3">
-                  <h2 id="titleProduct">${product.title}</h2>
-                  <h3>Ціна: <span id="priceProductSumm">${product.price}</span> грн</h3>
+                </div>
+                <div class="col-6">
+                <div class="mt-3">
+                  <h5 id="titleProduct">${product.title}</h5>
+                  <h4 class="mt-3">Ціна: <span id="priceProductSumm">${product.price}</span> грн</h4>
+                </div>
                 </div>
               </div>`;
       }
@@ -49,7 +53,7 @@ class Cart {
           },
           body: JSON.stringify({
             clientName: document.querySelector('#client-name').value,
-            clientEmail: document.querySelector('#client-email').value,
+            clientEmail: document.querySelector('#client-phone').value,
             titleProduct: document.querySelector('#titleProduct').innerHTML,
             priceProduct: document.querySelector('#priceProductSumm').innerHTML,
             cart: this.cart,
