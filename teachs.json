@@ -2,8 +2,8 @@
    {
        "id": "1",
        "title": "Масаж з нуля",
-       "image": ["medicafarm-gel-dlya-ukhoda-travma-k-s-arnikoj-protiv-otekov-i-gematom-125-ml_1.jpg"],
-       "description": "",
+       "image": ["https://images.unsplash.com/photo-1570174006382-148305ce4972?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80"],
+       "description": "Загальний курс масажу (класика + антицелюлітний масаж). На курсах ви навчитеся робити: Масаж спини, рук, ніг, розслабляючий масаж, антицелюлітний масаж ). Практика до повного розуміння рухів (кожне зайняття на наших курсах масажу буде практичне Тривалість курсу масажу складає: 18 занять по 2 години Заняття проводяться з понеділка по суботу .",
        "price": 2000,
        "new": false,
        "sale": false,
@@ -13,8 +13,8 @@
    {
        "id": "2",
        "title": "Базовий рівень",
-       "image": ["medicafarm-gel-dlya-ukhoda-ruma-k-s-garpagofitumom-i-progrevaniem-intensivnyj-razogrev-125-ml.jpg"],
-       "description": "",
+       "image": ["https://images.unsplash.com/photo-1505944270255-72b8c68c6a70?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80"],
+       "description": "Загальний курс масажу (класика + антицелюлітний масаж). На курсах ви навчитеся робити: Масаж спини, рук, ніг, розслабляючий масаж, антицелюлітний масаж ). ",
        "price": 5000,
        "new": false,
        "sale": false,
@@ -24,8 +24,8 @@
    {
       "id": "3",
       "title": "Підвищення кваліфікації",
-      "image": ["medicafarm-gel-dlya-ukhoda-travma-k-s-arnikoj-protiv-otekov-i-gematom-125-ml_1.jpg"],
-      "description": "",
+      "image": ["https://images.unsplash.com/photo-1519824145371-296894a0daa9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80"],
+      "description": "Загальний курс масажу (класика + антицелюлітний масаж). На курсах ви навчитеся робити: Масаж спини. ",
       "price": 3000,
       "new": false,
       "sale": false,

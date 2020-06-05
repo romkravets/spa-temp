@@ -253,8 +253,14 @@ body.offcanvas-active{
 /*Service section*/
 
 .services-img-small {
-    width: 200px;
-    height: 200px;
+    width: 211px;
+    height: 211px;
+}
+
+.services .card {
+    max-width: 600px;
+    border-radius: 0;
+    /* border: none; */
 }
 
 .services h2 {
@@ -607,8 +613,9 @@ body.offcanvas-active{
 
 /* Modal */
 
-#modal-products  .modal-header{
+#modal-products  .modal-header, #modal-teaching  .modal-header {
     background: rgb(240, 248, 255);
+    text-transform: uppercase;
 }
 
 .modal .close img {
@@ -618,6 +625,7 @@ body.offcanvas-active{
 
 .modal-content {
     border-radius: 0;
+    border: none;
 }
 
 input:focus, input[type]:focus, .uneditable-input:focus {

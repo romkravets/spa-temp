@@ -22,7 +22,7 @@ class Cart {
                 <div class="col-6">
                 <div class="mt-3">
                   <h5 id="titleProduct">${product.title}</h5>
-                  <h4 class="text-center mt-3">Ціна: <span id="priceProductSumm">${product.price}</span> грн</h4>
+                  <h4 class="mt-3">Ціна: <span id="priceProductSumm">${product.price}</span> грн</h4>
                 </div>
                 </div>
               </div>`;
