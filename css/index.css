@@ -77,17 +77,21 @@ html body {
     text-decoration: none;
     border: none;
     border-radius: 0;
-    outline: none;
     }
 
+.btn-main:focus {
+    outline: none;
+}
+
+
 .btn-accent {
-    background: none repeat scroll 0 0 #006600;
+    background: none repeat scroll 0 0 #00a046;
     color: rgb(255, 255, 255);
     text-transform: uppercase;
 }
 
 .btn-accent:hover {
-    background: none repeat scroll 0 0 #038303;
+    background: none repeat scroll 0 0 #00bc52;
     transition: var(--main-transition);
 }
 
@@ -318,6 +322,10 @@ body.offcanvas-active{
     color: var(--color-paragraph);
 }
 
+.trachining-section button {
+    border: 1px solid transparent;
+}
+
 .trachining-section .start-course h3 {
     color: #45c9eb;
 }
@@ -341,6 +349,10 @@ body.offcanvas-active{
 .trachining-section .qualifications-up .btn-main {
     background-color:  #e53099;
 }
+/* .trachining-section .qualifications-up .btn-main:hover, .trachining-section .basic-course .btn-main:hover, .trachining-section .start-course .btn-main:hover {
+
+} */
+
 
 
 /* Footer-section */
@@ -592,3 +604,26 @@ body.offcanvas-active{
 }
 
 /* Product section */
+
+/* Modal */
+
+#modal-products  .modal-header{
+    background: rgb(240, 248, 255);
+}
+
+.modal .close img {
+    width: 25px;
+    height: 25px;
+}
+
+.modal-content {
+    border-radius: 0;
+}
+
+input:focus, input[type]:focus, .uneditable-input:focus {
+    border-color: rgba(215, 116, 0, 0.8);
+    box-shadow: 0 1px 1px rgba(215, 116, 0, 0.075) inset, 0 0 8px rgba(215, 116, 0, 0.6);
+    outline: 0 none;
+}
+
+/* Modal */

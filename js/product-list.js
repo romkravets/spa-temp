@@ -42,7 +42,7 @@ class ProductList {
                         <div class="card-price flex-fill d-flex flex-wrap">
                           <h5 class="${saleClass}">${product.price} грн</h5> ${priceSale}
                         </div>
-                          <button class="btn-main btn-accent btn-product buy" data-toggle="modal" data-target="#modal-cart"  data-id="${product.id}" alt="Laboratoties INELDEA. Професійні засоби по догляду за тілом та обличчям MEDICAFARM, EFFIDERM, Франція" title="Замовити">Замовити</button>
+                          <button class="btn-main btn-accent btn-product buy" data-toggle="modal" data-target="#modal-products"  data-id="${product.id}" alt="Laboratoties INELDEA. Професійні засоби по догляду за тілом та обличчям MEDICAFARM, EFFIDERM, Франція" title="Замовити">Замовити</button>
                         </div>
                         <div class="title-width">
                           <h4 class="card-title">${product.title}</h4>

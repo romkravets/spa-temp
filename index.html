@@ -94,8 +94,7 @@
                                   <h3>Експрес масаж</h3>
                                   <p class="card-text mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
                                   <div class="d-flex justify-content-between">
-                                    <button class="btn-main btn-accent btn-service">Інші майстрі</button>
-                                    <button class="btn-main btn-accent btn-service">Юрій Мартюк</button>
+                                    <button class="btn-main btn-accent btn-service" id="sreviceSend">Замовити</button>
                                   </div>
                                 </div>
                               </div>
@@ -466,34 +465,39 @@
         </div>
 
         <!-- Modal Cart -->
-        <div class="modal fade" id="modal-cart" tabindex="-1" role="dialog" aria-labelledby="cartLabel" aria-hidden="true">
+        <div class="modal fade" id="modal-products" tabindex="-1" role="dialog" aria-labelledby="cartLabel" aria-hidden="true">
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title" id="cartLabel">Cart</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
+                        <h5 class="modal-title" id="cartLabel">Замовлення</h5>
+                        <button type="button"  class="btn btn-close close" data-dismiss="modal" aria-label="Close">
+                          <img src="img/icons/close-darken.svg" alt="" />
+                      </buttontype="button">
                     </div>
                     <div class="modal-body">
+                      <div class="row">
+                        <div class="col-12">
                         <div class="cart-product-list-container"></div>
                         <hr />
+                      </div>
+                        <div class="col-12">
                         <div class="container">
                             <form class="form-contacts">
                                 <div class="form-group row">
-                                    <label for="client-name" class="col-4 col-form-label">Your name:</label>
-                                    <input class="form-control col-8" type="text" id="client-name" required />
+                                    <label for="client-name" class="col-4 col-form-label">Ваше ім'я:</label>
+                                    <input class="form-control col-8" type="text" id="client-name" required  placeholder="Ім'я"/>
                                 </div>
                                 <div class="form-group row">
-                                    <label for="client-email" class="col-4 col-form-label">Your email:</label>
-                                    <input class="form-control col-8" type="email" id="client-email" required />
+                                    <label for="client-phone" class="col-4 col-form-label">Ваш телефон:</label>
+                                    <input class="form-control col-8" type="text" id="client-phone" required  placeholder="000-000-00-00"/>
                                 </div>
                             </form>
                         </div>
+                      </div>
+                      </div>
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary btn-close" data-dismiss="modal">Close</button>
-                        <button class="btn btn-primary order">Order</button>
+                        <button class="btn-main btn-accent order">Оформити замовлення</button>
                     </div>
                 </div>
             </div>
