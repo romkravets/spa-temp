@@ -1,0 +1,35 @@
+[
+   {
+       "id": "1",
+       "title": "Масаж з нуля",
+       "image": ["https://images.unsplash.com/photo-1570174006382-148305ce4972?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80"],
+       "description": "Загальний курс масажу (класика + антицелюлітний масаж). На курсах ви навчитеся робити: Масаж спини, рук, ніг, розслабляючий масаж, антицелюлітний масаж ). Практика до повного розуміння рухів (кожне зайняття на наших курсах масажу буде практичне Тривалість курсу масажу складає: 18 занять по 2 години Заняття проводяться з понеділка по суботу .",
+       "price": 2000,
+       "new": false,
+       "sale": false,
+       "category": "start-course",
+       "priceSale": ""
+   },
+   {
+       "id": "2",
+       "title": "Базовий рівень",
+       "image": ["https://images.unsplash.com/photo-1505944270255-72b8c68c6a70?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80"],
+       "description": "Загальний курс масажу (класика + антицелюлітний масаж). На курсах ви навчитеся робити: Масаж спини, рук, ніг, розслабляючий масаж, антицелюлітний масаж ). ",
+       "price": 5000,
+       "new": false,
+       "sale": false,
+       "category": "basic-course",
+       "priceSale": ""
+   },
+   {
+      "id": "3",
+      "title": "Підвищення кваліфікації",
+      "image": ["https://images.unsplash.com/photo-1519824145371-296894a0daa9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80"],
+      "description": "Загальний курс масажу (класика + антицелюлітний масаж). На курсах ви навчитеся робити: Масаж спини. ",
+      "price": 3000,
+      "new": false,
+      "sale": false,
+      "category": "qualifications-up",
+      "priceSale": ""
+  }
+]
