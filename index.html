@@ -1,211 +1,515 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <meta name="keywords" content="" />
+        <meta name="description" content="" />
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="keywords" content="" />
-    <meta name="description" content="" />
+        <title>Юрій Мартюк</title>
+        <link rel="stylesheet" href="css/bootstrap.min.css" />
+        <link rel="stylesheet" href="css/animate.min.css" />
+        <link rel="stylesheet" href="css/index.css" />
+    </head>
 
-    <title>Юрій Мартюк</title>
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/animate.min.css">
-    <link rel="stylesheet" href="css/index.css">
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
-</head>
-
-<body>
-<!--Header-->
-  <header class="container-fluid bg-header">
-    <nav class="container navbar navbar-expand-lg">
-      <a class="navbar-brand" href="#">Юрій Мартюк</a>
-      <button class="navbar-toggler" type="button" data-trigger="#main_nav">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-    <div class="navbar-collapse" id="main_nav">
-    <div class="offcanvas-header mt-3">
-      <button class="btn btn-close float-right">
-        <img src="img/icons/close.svg" alt="">
-      </button>
-      <h5 class="py-2 text-white">Юрій Мартюк</h5>
-    </div>
-
-    <ul class="navbar-nav ml-auto">
-      <li class="nav-item"><a class="nav-link d-flex align-items-center" href="#">Масаж від чемпіона</a></li>
-      <li class="nav-item"><a class="nav-link d-flex align-items-center" href="#">Масажі</a></li>
-      <li class="nav-item"><a class="nav-link d-flex align-items-center" href="#">Навчання</a></li>
-      <li class="nav-item"><a class="nav-link d-flex align-items-center" href="#">Вибір косметики</a></li>
-      <div class="d-none">
-        <a class="nav-link openCartLink" href="#modal-cart" data-toggle="modal">
-          <svg class="svg-inline--fa fa-shopping-cart fa-w-18" aria-hidden="true" data-prefix="fas" data-icon="shopping-cart" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" data-fa-i2svg=""><path fill="currentColor" d="M528.12 301.319l47.273-208C578.806 78.301 567.391 64 551.99 64H159.208l-9.166-44.81C147.758 8.021 137.93 0 126.529 0H24C10.745 0 0 10.745 0 24v16c0 13.255 10.745 24 24 24h69.883l70.248 343.435C147.325 417.1 136 435.222 136 456c0 30.928 25.072 56 56 56s56-25.072 56-56c0-15.674-6.447-29.835-16.824-40h209.647C430.447 426.165 424 440.326 424 456c0 30.928 25.072 56 56 56s56-25.072 56-56c0-22.172-12.888-41.332-31.579-50.405l5.517-24.276c3.413-15.018-8.002-29.319-23.403-29.319H218.117l-6.545-32h293.145c11.206 0 20.92-7.754 23.403-18.681z"></path></svg><!-- <i class="fas fa-shopping-cart"></i> -->
-            Cart<span id="cart-badge" class="badge badge-light">0</span>
-        </a>
-    </div>
-    </ul>
-      </div> <!-- navbar-collapse.// -->
-    </nav>
-</header>
-<!--Header-->
-    <main>
-        <section class="container-fluid intro">
-          <div class="container pt-5 pt-lg-0">
-          <div class="row align-items-center">
-            <div class="col-12 col-lg-7">
-              <div>
-                <h3>Ексклюзивні види масажу від</h3>
-                <h1 class="main-title">Чемпіона України Юрія Мартюка</h1>
-                <div class="d-flex w-100 justify-content-center justify-content-lg-end">
-                  <button class="mt-4 btn draw-border">Замовити масаж</button>
+    <body>
+        <!--Header-->
+        <header class="container-fluid bg-header">
+            <nav class="container navbar navbar-expand-lg">
+                <a class="navbar-brand" href="#">Юрій Мартюк</a>
+                <button class="navbar-toggler" type="button" data-trigger="#main_nav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse" id="main_nav">
+                    <div class="offcanvas-header mt-3">
+                        <button class="btn btn-close float-right">
+                            <img src="img/icons/close.svg" alt="" />
+                        </button>
+                        <h5 class="py-2 text-white">Юрій Мартюк</h5>
+                    </div>
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item"><a class="nav-link d-flex align-items-center" href="#">Масаж від чемпіона</a></li>
+                        <li class="nav-item"><a class="nav-link d-flex align-items-center" href="#">Масажі</a></li>
+                        <li class="nav-item"><a class="nav-link d-flex align-items-center" href="#">Навчання</a></li>
+                        <li class="nav-item"><a class="nav-link d-flex align-items-center" href="#">Вибір косметики</a></li>
+                        <div class="d-none">
+                            <a class="nav-link openCartLink" href="#modal-cart" data-toggle="modal">
+                                <svg class="svg-inline--fa fa-shopping-cart fa-w-18" aria-hidden="true" data-prefix="fas" data-icon="shopping-cart" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" data-fa-i2svg="">
+                                    <path
+                                        fill="currentColor"
+                                        d="M528.12 301.319l47.273-208C578.806 78.301 567.391 64 551.99 64H159.208l-9.166-44.81C147.758 8.021 137.93 0 126.529 0H24C10.745 0 0 10.745 0 24v16c0 13.255 10.745 24 24 24h69.883l70.248 343.435C147.325 417.1 136 435.222 136 456c0 30.928 25.072 56 56 56s56-25.072 56-56c0-15.674-6.447-29.835-16.824-40h209.647C430.447 426.165 424 440.326 424 456c0 30.928 25.072 56 56 56s56-25.072 56-56c0-22.172-12.888-41.332-31.579-50.405l5.517-24.276c3.413-15.018-8.002-29.319-23.403-29.319H218.117l-6.545-32h293.145c11.206 0 20.92-7.754 23.403-18.681z"
+                                    ></path>
+                                </svg>
+                                Cart<span id="cart-badge" class="badge badge-light">0</span>
+                            </a>
+                        </div>
+                    </ul>
                 </div>
-            </div>
-            </div>
-            <div class="col-12 col-lg-4 d-flex justify-content-lg-center">
-              <img class="main-img" src="img/images/yurii-martiuk-bg.png" alt="Yurii Martiuk">
-            </div>
-          </div>
-        </div>
-        </section>
-        <section class="container-fluid services">
-          <div class="row">
-            <div class="col-12 py-4 w-100 d-flex justify-content-center flex-column align-items-center title-container">
-            <h2 class="title">Послуги</h2>
-              <p class="subtitle">Ознайомтесь з видами масажу</p>
-            </div>
-          </div>
-        </section>
-        <section>
-          <div class="container-fluid trachining-section">
-            <div class="container">
+                <!-- navbar-collapse.// -->
+            </nav>
+        </header>
+        <!--Header-->
+        <main>
+            <section class="container-fluid intro">
+                <div class="container pt-5 pt-lg-0">
+                    <div class="row align-items-center">
+                        <div class="col-12 col-lg-7">
+                            <div>
+                                <h3>Ексклюзивні види масажу від</h3>
+                                <h1 class="main-title">Чемпіона України Юрія Мартюка</h1>
+                                <div class="d-flex w-100 justify-content-center justify-content-lg-end">
+                                    <button class="mt-4 btn draw-border">Замовити масаж</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-4 d-flex justify-content-center">
+                            <img class="main-img" src="img/images/yurii-martiuk-bg.png" alt="Yurii Martiuk" />
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="services">
+              <div class="container">
                 <div class="row">
-                    <div class="col-12 py-4 w-100 d-flex justify-content-center flex-column align-items-center title-container text-light">
-                        <h2 class="title">Навчання</h2>
-                        <p class="subtitle">Навчання масажної справи у професіоналів</p>
+                    <div class="col-12 py-4 w-100 d-flex justify-content-center flex-column align-items-center title-container">
+                        <h2 class="title">Послуги</h2>
+                        <p class="subtitle">Ексклюзивні види масажу від Чемпіона України Юрія Мартюка</p>
+                    </div>
+                  </div>
+                </div>
+                  <div class="container-fluid main-container">
+                    <div class="container">
+                      <div class="row">
+                        <div class="col-12 text-center">
+                          <h2 class="title">Масаж за методикою RS Holistic Massage</h2>
+                          <h4 class="title-service">Цілісний, системний, структурний</h4>
+                          <div class="row text-center">
+                            <div class="col-12 col-lg-6">
+                              <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative service">
+                                <div class="col-auto">
+                                  <img class="img-fluid services-img-small" src="https://images.unsplash.com/photo-1519823551278-64ac92734fb1?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80" alt="" >
+                                </div>
+                                <div class="col p-4 d-flex flex-column position-static">
+                                  <h3>Експрес масаж</h3>
+                                  <p class="card-text mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+                                  <div class="d-flex justify-content-between">
+                                    <button class="btn-main btn-accent btn-service">Інші майстрі</button>
+                                    <button class="btn-main btn-accent btn-service">Юрій Мартюк</button>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-12 col-lg-6">
+                              <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative service">
+                                <div class="col p-4 d-flex flex-column position-static">
+                                  <h3>Антистрес масаж</h3>
+                                  <p class="card-text mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+                                  <a href="#" class="stretched-link">Continue reading</a>
+                                </div>
+                                <div class="col-auto">
+                                  <img class="img-fluid services-img-small" src="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80" alt="" >
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-12 col-lg-6">
+                              <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative service">
+                                <div class="col-auto">
+                                  <img class="img-fluid services-img-small" src="https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80" alt="" >
+                                </div>
+                                <div class="col p-4 d-flex flex-column position-static">
+                                  <h3>Масаж для жінок</h3>
+                                  <p class="card-text mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+                                  <a href="#" class="stretched-link">Continue reading</a>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-12 col-lg-6">
+                              <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative service">
+                                <div class="col p-4 d-flex flex-column position-static">
+                                  <h3>Масаж для чоловіків</h3>
+                                  <p class="card-text mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+                                  <a href="#" class="stretched-link">Continue reading</a>
+                                </div>
+                                <div class="col-auto">
+                                  <img class="img-fluid services-img-small" src="https://images.unsplash.com/photo-1542848284-8afa78a08ccb?ixlib=rb-1.2.1&auto=format&fit=crop&w=633&q=80" alt="" >
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-12 col-lg-6">
+                              <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative service">
+                                <div class="col-auto">
+                                  <img class="img-fluid services-img-small" src="https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80" alt="" >
+                                </div>
+                                <div class="col p-4 d-flex flex-column position-static">
+                                  <h3>Масаж обличчя</h3>
+                                  <p class="card-text mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+                                  <a href="#" class="stretched-link">Continue reading</a>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-12 col-lg-6">
+                              <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative service">
+                                <div class="col p-4 d-flex flex-column position-static">
+                                  <h3>Масаж стоп </h3>
+                                  <p class="card-text mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+                                  <a href="#" class="stretched-link">Continue reading</a>
+                                </div>
+                                <div class="col-auto">
+                                  <img class="img-fluid services-img-small" src="https://images.unsplash.com/photo-1519823551278-64ac92734fb1?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80" alt="" >
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                      </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="container-fluid bg-service-dark main-container">
+                    <div class="container text-center">
+                      <h2 class="title text-light">Фасціальна пластика тіла та обличчя</h2>
+                          <h4 class="title-service text-light">Методикa Ірен Террауди</h4>
+                            <div class="row justify-content-center">
+                              <div class="col-12 col-lg-7">
+                                <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative service">
+                                  <div class="col-auto d-none d-lg-block">
+                                    <img class="img-fluid services-img-small" src="https://images.unsplash.com/photo-1514672013381-c6d0df1c8b18?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80" alt="" >
+                                  </div>
+                                  <div class="col p-4 d-flex flex-column position-static">
+                                    <h3>Фасціальна пластика тіла та обличчя за методикою Ірен Террауди</h3>
+                                    <p class="card-text mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+                                    <a href="#" class="stretched-link">Continue reading</a>
+                                  </div>
+                                </div>
+                              </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="containet-fluid main-container">
+                    <div class="container text-center">
+                      <h2 class="title text-center mb-5">Програми корекції тіла та фігури</h2>
+                        <div class="row text-center">
+                          <div class="col-12 col-lg-6">
+                            <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative service">
+                              <div class="col-auto">
+                                <img class="img-fluid services-img-small" src="https://images.unsplash.com/photo-1519823551278-64ac92734fb1?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80" alt="" >
+                              </div>
+                              <div class="col p-4 d-flex flex-column position-static">
+                                <h3>Класичний масаж спини</h3>
+                                <p class="card-text mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+                                <div class="d-flex justify-content-between">
+                                  <button class="btn-main btn-accent btn-service">Інші майстрі</button>
+                                  <button class="btn-main btn-accent btn-service">Юрій Мартюк</button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-12 col-lg-6">
+                            <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative service">
+                              <div class="col p-4 d-flex flex-column position-static">
+                                <h3>Класичний масаж всього тіла</h3>
+                                <p class="card-text mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+                                <div class="d-flex justify-content-between">
+                                  <button class="btn-main btn-accent btn-service">Інші майстрі</button>
+                                  <button class="btn-main btn-accent btn-service">Юрій Мартюк</button>
+                                </div>
+                              </div>
+                              <div class="col-auto">
+                                <img class="img-fluid services-img-small" src="https://images.unsplash.com/photo-1519823551278-64ac92734fb1?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80" alt="" >
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-12 col-lg-6">
+                            <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative service">
+                              <div class="col-auto">
+                                <img class="img-fluid services-img-small" src="https://images.unsplash.com/photo-1519823551278-64ac92734fb1?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80" alt="" >
+                              </div>
+                              <div class="col p-4 d-flex flex-column position-static">
+                                <h3>Баночний масаж</h3>
+                                <p class="card-text mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+                                <div class="d-flex justify-content-between">
+                                  <button class="btn-main btn-accent btn-service">Інші майстрі</button>
+                                  <button class="btn-main btn-accent btn-service">Юрій Мартюк</button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-12 col-lg-6">
+                            <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative service">
+                              <div class="col p-4 d-flex flex-column position-static">
+                                <h3>Стоун масаж</h3>
+                                <p class="card-text mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+                                <a href="#" class="stretched-link">Continue reading</a>
+                              </div>
+                              <div class="col-auto">
+                                <img class="img-fluid services-img-small" src="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80" alt="" >
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-12 col-lg-6">
+                            <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative service">
+                              <div class="col-auto">
+                                <img class="img-fluid services-img-small" src="https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80" alt="" >
+                              </div>
+                              <div class="col p-4 d-flex flex-column position-static">
+                                <h3>Лімфодренажний масаж</h3>
+                                <p class="card-text mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+                                <a href="#" class="stretched-link">Continue reading</a>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-12 col-lg-6">
+                            <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative service">
+                              <div class="col p-4 d-flex flex-column position-static">
+                                <h3>Спортивний масаж </h3>
+                                <p class="card-text mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+                                <a href="#" class="stretched-link">Continue reading</a>
+                              </div>
+                              <div class="col-auto">
+                                <img class="img-fluid services-img-small" src="https://images.unsplash.com/photo-1542848284-8afa78a08ccb?ixlib=rb-1.2.1&auto=format&fit=crop&w=633&q=80" alt="" >
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-12 col-lg-6">
+                            <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative service">
+                              <div class="col-auto">
+                                <img class="img-fluid services-img-small" src="https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80" alt="" >
+                              </div>
+                              <div class="col p-4 d-flex flex-column position-static">
+                                <h3>Антицелюлітний масаж </h3>
+                                <p class="card-text mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+                                <a href="#" class="stretched-link">Continue reading</a>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-12 col-lg-6">
+                            <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative service">
+                              <div class="col p-4 d-flex flex-column position-static">
+                                <h3>Моделюючий SLIM масаж</h3>
+                                <p class="card-text mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+                                <a href="#" class="stretched-link">Continue reading</a>
+                              </div>
+                              <div class="col-auto">
+                                <img class="img-fluid services-img-small" src="https://images.unsplash.com/photo-1519823551278-64ac92734fb1?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80" alt="" >
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-md-4 table-content wow fadeInDown animated animated" data-wow-delay="0.2s" style="visibility: visible;-webkit-animation-delay: 0.2s; -moz-animation-delay: 0.2s; animation-delay: 0.2s;">
-                        <div class="table-item sliver">
-                            <h3>Масаж з нуля</h3>
-                            <ul>
-                                <li>Full Body Massage</li>
-                                <li>Deep Tissue Massage</li>
-                                <li>Hot Stone Massage</li>
-                                <li>Body Polish (1 hr)</li>
-                            </ul>
-                            <button class="mt-4 btn-main btn-accent">Замовити</button>
+              </div>
+            </section>
+            <section>
+                <div class="container-fluid main-container trachining-section">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12 pt-0 pb-5 w-100 d-flex justify-content-center flex-column align-items-center title-container text-light">
+                                <h2 class="title">Навчання</h2>
+                                <p class="subtitle text-light">Навчання масажної справи у Юрія Мартюка</p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-md-4 table-content wow fadeInDown animated animated" data-wow-delay="0.5s" style="visibility: visible;-webkit-animation-delay: 0.5s; -moz-animation-delay: 0.5s; animation-delay: 0.5s;">
-                        <div class="table-item gold">
-                            <h3>Базовий рівень</h3>
-                            <b>Курс класичного масажу широкого профілю</b>
-                            <ul>
-                                <li>Full Body Massage</li>
-                                <li>Deep Tissue Massage</li>
-                                <li>Hot Stone Massage</li>
-                                <li>Body Polish (1 hr)</li>
-                            </ul>
-                            <button class="mt-4 btn-main btn-accent">Замовити</button>
-                        </div>
-                    </div>
-                    <div class="col-md-4 table-content wow fadeInDown animated animated" data-wow-delay="0.81s" style="visibility: visible;-webkit-animation-delay: 0.81s; -moz-animation-delay: 0.81s; animation-delay: 0.81s;">
-                        <div class="table-item platinum">
-                            <h3>Підвищення кваліфікації</h3>
-                            <ul>
-                                <li>Full Body Massage</li>
-                                <li>Deep Tissue Massage</li>
-                                <li>Hot Stone Massage</li>
-                                <li>Body Polish (1 hr)</li>
-                            </ul>
-                            <button class="mt-4 btn-main btn-accent">Замовити</button>
+                        <div class="row">
+                            <div
+                                class="col-lg-4 mb-4 mb-lg-0 table-content wow fadeInDown animated animated"
+                                data-wow-delay="0.2s"
+                                style="visibility: visible; -webkit-animation-delay: 0.2s; -moz-animation-delay: 0.2s; animation-delay: 0.2s;"
+                            >
+                                <div class="table-item start-course">
+                                    <h3>Масаж з нуля</h3>
+                                    <ul>
+                                        <li>Full Body Massage</li>
+                                        <li>Deep Tissue Massage</li>
+                                        <li>Hot Stone Massage</li>
+                                        <li>Body Polish (1 hr)</li>
+                                    </ul>
+                                    <button class="btn-main btn-accent">Замовити</button>
+                                </div>
+                            </div>
+                            <div
+                                class="col-lg-4 mb-4 mb-lg-0 table-content wow fadeInDown animated animated"
+                                data-wow-delay="0.5s"
+                                style="visibility: visible; -webkit-animation-delay: 0.5s; -moz-animation-delay: 0.5s; animation-delay: 0.5s;"
+                            >
+                                <div class="table-item basic-course">
+                                    <h3>Базовий рівень</h3>
+                                    <b>(Курс класичного масажу широкого профілю)</b>
+                                    <ul>
+                                        <li>Full Body Massage</li>
+                                        <li>Hot Stone Massage</li>
+                                        <li>Body Polish (1 hr)</li>
+                                    </ul>
+                                    <button class="btn-main btn-accent">Замовити</button>
+                                </div>
+                            </div>
+                            <div
+                                class="col-lg-4 mb-4 mb-lg-0 table-content wow fadeInDown animated animated"
+                                data-wow-delay="0.81s"
+                                style="visibility: visible; -webkit-animation-delay: 0.81s; -moz-animation-delay: 0.81s; animation-delay: 0.81s;"
+                            >
+                                <div class="table-item qualifications-up">
+                                    <h3>Підвищення кваліфікації</h3>
+                                    <ul>
+                                        <li>Full Body Massage</li>
+                                        <li>Deep Tissue Massage</li>
+                                        <li>Hot Stone Massage</li>
+                                        <li>Body Polish (1 hr)</li>
+                                    </ul>
+                                    <button class="btn-main btn-accent">Замовити</button>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
-        </section>
-        <!-- <section>
-            <h2 id="products">Products</h2>
-            <div class="row products-container">
-            </div>
-        </section> -->
-    </main>
-<footer class="page-footer">
-  <p>Footer</p>
-</footer>
-
-
-    <!-- Modal Product Info -->
-    <div class="modal fade" id="productInfoModal" tabindex="-1" role="dialog" aria-labelledby="productInfoLabel" aria-hidden="true">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="productInfoLabel">Product Info</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body">
-              <img class="card-img-top" src="" alt="">
-              <h4 class="card-title"></h4>
-              <p class="card-text"></p>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary btn-close" data-dismiss="modal">Close</button>
-            <button class="btn btn-primary buy" data-id="id">Buy</button>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Modal Cart -->
-    <div class="modal fade" id="modal-cart" tabindex="-1" role="dialog" aria-labelledby="cartLabel" aria-hidden="true">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="cartLabel">Cart</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body">
-            <div class="cart-product-list-container"></div>
-            <hr>
+            </section>
+            <section class="container-fluid products-section main-container">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 pb-4 w-100 d-flex justify-content-center flex-column align-items-center text-center title-container">
+                            <h2 class="title">Косметика</h2>
+                            <p class="subtitle">Laboratoties INELDEA. Професійні засоби по догляду за тілом та обличчям</p>
+                            <b class="subtitle">MEDICAFARM, EFFIDERM, Франція</b>
+                        </div>
+                    </div>
+                    <div class="">
+                      <ul class="nav nav-tabs">
+                          <li class="nav-item btnTab">
+                              <a class="nav-link active" data-toggle="tab" href="#medicafarm">
+                                <img id="btnOne" src="img/icons/logo-medicafarm.png" alt="medicafarm">
+                              </a>
+                          </li>
+                          <li class="nav-item btnTab">
+                              <a class="nav-link" data-toggle="tab" href="#effiderm">
+                                <img id="btnTwo" src="img/icons/logo-effiderm.png" alt="effiderm">
+                              </a>
+                          </li>
+                      </ul>
+                  </div>
+  
+                  <!-- Tab panes -->
+                  <div class="my-5 tab-content">
+                      <div id="medicafarm" class="container tab-pane active">
+                          <div class="row products-container-one">
+                              <!--Products are dynamically generated here-->
+                          </div>
+                      </div>
+                      <div id="effiderm" class="container tab-pane fade">
+                          <div class="row products-container-two">
+                              <!--Products are dynamically generated here-->
+                          </div>
+                      </div>
+                  </div>
+                  <div class="row products-container fade">
+                      <!--Products are dynamically generated here-->
+                  </div>
+                </div>
+            </section>
+        </main>
+        <footer class="container-fluid footer-section">
             <div class="container">
-              <form class="form-contacts">
-                <div class="form-group row">
-                  <label for="client-name" class="col-4 col-form-label">Your name:</label>
-                  <input class="form-control col-8" type="text" id="client-name" required>
+                <div class="row align-items-baseline">
+                    <div class="col-12 col-lg-2">
+                        <ul class="d-flex social-media">
+                            <li>
+                                <a href="#"><img src="img/icons/facebook.svg" alt="facebook" /></a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="img/icons/instagram.svg" alt="instagram" /></a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="img/icons/youtube.svg" alt="youtube" /></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-12 col-lg-10 text-center copyright">
+                        <ul class="nav navbar-nav flex-row">
+                            <li><a href="#">Масаж від Чемпіона</a></li>
+                            <li><a href="#">Масажі</a></li>
+                            <li><a href="#">Навчання</a></li>
+                            <li><a href="#">Вибір косметики</a></li>
+                        </ul>
+                        <span class="d-block mt-4">&#169; 2020</span>
+                    </div>
                 </div>
-                <div class="form-group row">
-                  <label for="client-email" class="col-4 col-form-label">Your email:</label>
-                  <input class="form-control col-8" type="email" id="client-email" required>
-                </div>
-              </form>
             </div>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary btn-close" data-dismiss="modal">Close</button>
-            <button class="btn btn-primary order">Order</button>
-          </div>
+        </footer>
+        <!-- <a href="" title="Scroll to Top" class="top_button backtotop hint--bounce hint--left percent_circle show" style="display: none;">
+      <svg class="backtotop-round" viewBox="0 0 100 100" width="50" height="50" style="stroke-dasharray: 251.327, 999;">
+            <circle cx="50" cy="50" r="40"></circle>
+      </svg>
+      <?xml version="1.0"?>
+      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 490.523 490.523" style="enable-background:new 0 0 490.523 490.523;" xml:space="preserve" width="512px" height="512px" class=""><g><path style="fill:#FFC107;" d="M487.411,355.047L252.744,120.38c-4.165-4.164-10.917-4.164-15.083,0L2.994,355.047  c-4.093,4.237-3.976,10.99,0.262,15.083c4.134,3.993,10.687,3.993,14.821,0l227.115-227.115l227.115,227.136  c4.237,4.093,10.99,3.976,15.083-0.261c3.993-4.134,3.993-10.688,0-14.821L487.411,355.047z" data-original="#FFC107"/><path d="M479.859,373.266c-2.831,0.005-5.548-1.115-7.552-3.115L245.192,143.015L18.077,370.151  c-4.237,4.093-10.99,3.976-15.083-0.262c-3.993-4.134-3.993-10.687,0-14.821l234.667-234.667c4.165-4.164,10.917-4.164,15.083,0  l234.667,234.667c4.159,4.172,4.148,10.926-0.024,15.085C485.388,372.146,482.681,373.265,479.859,373.266z" data-original="#000000" class="active-path" style="fill:#FFFFFF" data-old_color="#000000"/></g> </svg>
+    </a> -->
+
+        <!-- Modal Product Info -->
+        <div class="modal fade" id="productInfoModal" tabindex="-1" role="dialog" aria-labelledby="productInfoLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="productInfoLabel">Product Info</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <img class="card-img-top" src="" alt="" />
+                        <h4 class="card-title"></h4>
+                        <p class="card-text"></p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary btn-close" data-dismiss="modal">Close</button>
+                        <button class="btn btn-primary buy" data-id="id">Buy</button>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
 
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-    <script defer src="https://use.fontawesome.com/releases/v5.5.0/js/all.js" integrity="sha384-GqVMZRt5Gn7tB9D9q7ONtcp4gtHIUEW/yG7h98J7IpE3kpi+srfFyyB/04OV6pG0" crossorigin="anonymous"></script>
-    <script defer src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    <script src="js/wow.min.js"></script>
-    <script src="js/smooth-scroll.js"></script>
-    <script async src="js/alert-window.js"></script>
-    <script defer src="js/products-service.js"></script>
-    <script defer src="js/cart.js"></script>
-    <script defer src="js/product-list.js"></script>
-    <script src="js/slick.js"></script>
-    <script defer src="js/index.js"></script>
-</body>
+        <!-- Modal Cart -->
+        <div class="modal fade" id="modal-cart" tabindex="-1" role="dialog" aria-labelledby="cartLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="cartLabel">Cart</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="cart-product-list-container"></div>
+                        <hr />
+                        <div class="container">
+                            <form class="form-contacts">
+                                <div class="form-group row">
+                                    <label for="client-name" class="col-4 col-form-label">Your name:</label>
+                                    <input class="form-control col-8" type="text" id="client-name" required />
+                                </div>
+                                <div class="form-group row">
+                                    <label for="client-email" class="col-4 col-form-label">Your email:</label>
+                                    <input class="form-control col-8" type="email" id="client-email" required />
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary btn-close" data-dismiss="modal">Close</button>
+                        <button class="btn btn-primary order">Order</button>
+                    </div>
+                </div>
+            </div>
+        </div>
 
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+        <script defer src="https://use.fontawesome.com/releases/v5.5.0/js/all.js" integrity="sha384-GqVMZRt5Gn7tB9D9q7ONtcp4gtHIUEW/yG7h98J7IpE3kpi+srfFyyB/04OV6pG0" crossorigin="anonymous"></script>
+
+        <script src="js/wow.min.js"></script>
+        <script src="js/smooth-scroll.js"></script>
+        <script async src="js/alert-window.js"></script>
+        <script defer src="js/products-service.js"></script>
+        <script defer src="js/cart.js"></script>
+        <script defer src="js/product-list.js"></script>
+        <script defer src="js/index.js"></script>
+    </body>
 </html>

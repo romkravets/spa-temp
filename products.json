@@ -1,58 +1,135 @@
 [
     {
-        "id": "1",
-        "title": "Large drone",
-        "image": "drone-large.jpg",
-        "description": "Large drone for most critical missions. Can carry load.",
-        "price": 499.99
+        "id": "011",
+        "title": "Гель для догляду з арніки проти набряків і гематом - Laboratories Ineldea",
+        "image": ["medicafarm-gel-dlya-ukhoda-travma-k-s-arnikoj-protiv-otekov-i-gematom-125-ml_1.jpg"],
+        "description": "Гель з терапевтичним ефектом. Дія: Інтенсивний протизастійний ефект. Активізує в травмованих, або оточених тканинах дренаж, знімає застій, відновлює судинну систему, прискорює розсмоктування набряків і гематом, заспокоює м'язові болі. Прискорює евакуацію токсинів. При курсовому застосуванні має виражену антикуперозний дією. Водно-розчинна форма препарату добре проводить ультразвук, електричні струми і дозволяє застосовуватися в апаратної косметології.",
+        "price": 404,
+        "new": false,
+        "sale": false,
+        "category": "medicafarm",
+        "priceSale": "",
+        "priceMehIscust": ""
     },
     {
-        "id": "2",
-        "title": "Small drone",
-        "image": "drone-small.jpg",
-        "description": "Small drone. Can fly undetected.",
-        "price": 199.99
+        "id": "012",
+        "title": "Гель для догляду з арніки проти набряків і гематом - Laboratories Ineldea",
+        "image": ["medicafarm-gel-dlya-ukhoda-ruma-k-s-garpagofitumom-i-progrevaniem-intensivnyj-razogrev-125-ml.jpg"],
+        "description": "Гель з терапевтичним ефектом. Дія: Інтенсивний протизастійний ефект. Активізує в травмованих, або оточених тканинах дренаж, знімає застій, відновлює судинну систему, прискорює розсмоктування набряків і гематом, заспокоює м'язові болі. Прискорює евакуацію токсинів. При курсовому застосуванні має виражену антикуперозний дією. Водно-розчинна форма препарату добре проводить ультразвук, електричні струми і дозволяє застосовуватися в апаратної косметології.",
+        "price": 404,
+        "new": false,
+        "sale": false,
+        "category": "medicafarm",
+        "priceSale": "",
+        "priceMehIscust": ""
     },
     {
-        "id": "3",
-        "title": "Blue drone",
-        "image": "drone-blue.jpg",
-        "description": "Nice-looking drone in blue color. Has built-in HD camera",
-        "price": 249.99
+        "id": "013",
+        "title": "Гель для догляду з арніки проти набряків і гематом - Laboratories Ineldea",
+        "image": ["medicafarm-gel-dlya-ukhoda-travma-k-s-arnikoj-protiv-otekov-i-gematom-125-ml_1.jpg"],
+        "description": "Гель з терапевтичним ефектом. Дія: Інтенсивний протизастійний ефект. Активізує в травмованих, або оточених тканинах дренаж, знімає застій, відновлює судинну систему, прискорює розсмоктування набряків і гематом, заспокоює м'язові болі. Прискорює евакуацію токсинів. При курсовому застосуванні має виражену антикуперозний дією. Водно-розчинна форма препарату добре проводить ультразвук, електричні струми і дозволяє застосовуватися в апаратної косметології.",
+        "price": 404,
+        "new": false,
+        "sale": false,
+        "category": "medicafarm",
+        "priceSale": "",
+        "priceMehIscust": ""
     },
     {
-        "id": "4",
-        "title": "Red drone",
-        "image": "drone-red.jpg",
-        "description": "Nice-looking drone in red color",
-        "price": 229.99
+        "id": "014",
+        "title": "Гель для догляду з арніки проти набряків і гематом - Laboratories Ineldea",
+        "image": ["medicafarm-gel-dlya-ukhoda-ruma-k-s-garpagofitumom-i-progrevaniem-intensivnyj-razogrev-125-ml.jpg"],
+        "description": "Гель з терапевтичним ефектом. Дія: Інтенсивний протизастійний ефект. Активізує в травмованих, або оточених тканинах дренаж, знімає застій, відновлює судинну систему, прискорює розсмоктування набряків і гематом, заспокоює м'язові болі. Прискорює евакуацію токсинів. При курсовому застосуванні має виражену антикуперозний дією. Водно-розчинна форма препарату добре проводить ультразвук, електричні струми і дозволяє застосовуватися в апаратної косметології.",
+        "price": 404,
+        "new": false,
+        "sale": false,
+        "category": "medicafarm",
+        "priceSale": "",
+        "priceMehIscust": ""
     },
     {
-        "id": "5",
-        "title": "Black gyroboard",
-        "image": "gyroboard-black.jpg",
-        "description": "Black gyroboard to match your style",
-        "price": 729.99
+        "id": "015",
+        "title": "Гель для догляду з арніки проти набряків і гематом - Laboratories Ineldea",
+        "image": ["medicafarm-gel-dlya-ukhoda-travma-k-s-arnikoj-protiv-otekov-i-gematom-125-ml_1.jpg"],
+        "description": "Гель з терапевтичним ефектом. Дія: Інтенсивний протизастійний ефект. Активізує в травмованих, або оточених тканинах дренаж, знімає застій, відновлює судинну систему, прискорює розсмоктування набряків і гематом, заспокоює м'язові болі. Прискорює евакуацію токсинів. При курсовому застосуванні має виражену антикуперозний дією. Водно-розчинна форма препарату добре проводить ультразвук, електричні струми і дозволяє застосовуватися в апаратної косметології.",
+        "price": 404,
+        "new": false,
+        "sale": false,
+        "category": "medicafarm",
+        "priceSale": "",
+        "priceMehIscust": ""
     },
     {
-        "id": "6",
-        "title": "White gyroboard",
-        "image": "gyroboard-white.jpg",
-        "description": "White gyroboard with blue lights",
-        "price": 829.99
+        "id": "016",
+        "title": "Гель для догляду з арніки проти набряків і гематом - Laboratories Ineldea",
+        "image": ["medicafarm-gel-dlya-ukhoda-ruma-k-s-garpagofitumom-i-progrevaniem-intensivnyj-razogrev-125-ml.jpg"],
+        "description": "Гель з терапевтичним ефектом. Дія: Інтенсивний протизастійний ефект. Активізує в травмованих, або оточених тканинах дренаж, знімає застій, відновлює судинну систему, прискорює розсмоктування набряків і гематом, заспокоює м'язові болі. Прискорює евакуацію токсинів. При курсовому застосуванні має виражену антикуперозний дією. Водно-розчинна форма препарату добре проводить ультразвук, електричні струми і дозволяє застосовуватися в апаратної косметології.",
+        "price": 404,
+        "new": false,
+        "sale": false,
+        "category": "medicafarm",
+        "priceSale": "",
+        "priceMehIscust": ""
     },
     {
-        "id": "7",
-        "title": "Tesla Model X",
-        "image": "tesla-x.jpg",
-        "description": "Best crossover in the World",
-        "price": 99999.99
+        "id": "121",
+        "title": "Crème riche anti-âge / Анти-віковий крем",
+        "image": ["creme-riche-anti-age.jpg"],
+        "description": "",
+        "price": 400,
+        "new": false,
+        "sale": false,
+        "category": "effiderm",
+        "priceSale": "",
+        "priceMehIscust": ""
     },
     {
-        "id": "8",
-        "title": "Tesla Roadster",
-        "image": "tesla-roadster.jpg",
-        "description": "Best sports car in the World",
-        "price": 249999.99
+        "id": "122",
+        "title": "Crème riche anti-âge / Анти-віковий крем",
+        "image": ["creme-riche-anti-age.jpg"],
+        "description": "",
+        "price": 400,
+        "new": false,
+        "sale": false,
+        "category": "effiderm",
+        "priceSale": "",
+        "priceMehIscust": ""
+    },
+    {
+        "id": "123",
+        "title": "Crème riche anti-âge / Анти-віковий крем",
+        "image": ["creme-riche-anti-age.jpg"],
+        "description": "",
+        "price": 400,
+        "new": false,
+        "sale": false,
+        "category": "effiderm",
+        "priceSale": "",
+        "priceMehIscust": ""
+    },
+    {
+        "id": "124",
+        "title": "Crème riche anti-âge / Анти-віковий крем",
+        "image": ["creme-riche-anti-age.jpg"],
+        "description": "",
+        "price": 400,
+        "new": false,
+        "sale": false,
+        "category": "effiderm",
+        "priceSale": "",
+        "priceMehIscust": ""
+    },
+    {
+        "id": "125",
+        "title": "Crème riche anti-âge / Анти-віковий крем",
+        "image": ["creme-riche-anti-age.jpg"],
+        "description": "",
+        "price": 400,
+        "new": false,
+        "sale": false,
+        "category": "effiderm",
+        "priceSale": "",
+        "priceMehIscust": ""
     }
+
 ]

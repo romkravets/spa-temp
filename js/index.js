@@ -2,6 +2,7 @@ new ProductList(new Cart());
 
 $(function () {
 
+
  $("[data-trigger]").on("click", function(){
       var trigger_id =  $(this).attr('data-trigger');
       $(trigger_id).toggleClass("show");
@@ -29,4 +30,6 @@ $(function () {
  //Moble menu
 
 
-})
+});
+
+
