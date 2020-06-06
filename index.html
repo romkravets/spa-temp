@@ -209,14 +209,14 @@
                   </div>
                     <div class="col-12">
                     <div class="container">
-                        <form class="form-contacts">
+                        <form class="form-contacts" id="formId">
                             <div class="form-group row">
                                 <label for="client-name" class="col-4 col-form-label">Ваше ім'я:</label>
-                                <input class="form-control col-8" type="text" id="client-name" required  placeholder="Ім'я"/>
+                                <input class="form-control col-8 client-name" type="text" id="client-name" required  placeholder="Ім'я"/>
                             </div>
                             <div class="form-group row">
                                 <label for="client-phone" class="col-4 col-form-label">Ваш телефон:</label>
-                                <input class="form-control col-8" type="text" id="client-phone" required  placeholder="Телефон"/>
+                                <input class="form-control col-8 client-phone" type="text" id="client-phone" required  placeholder="Телефон"/>
                             </div>
                         </form>
                     </div>
@@ -224,7 +224,7 @@
                   </div>
                 </div>
                 <div class="modal-footer justify-content-center">
-                    <button class="btn-main btn-accent order">Записатись</button>
+                    <button type="submit" form="formId" class="btn-main btn-accent order">Записатись</button>
                 </div>
             </div>
         </div>
@@ -248,14 +248,14 @@
                       </div>
                         <div class="col-12">
                         <div class="container">
-                            <form class="form-contacts">
+                            <form class="form-contacts-product" id="productForm">
                                 <div class="form-group row">
                                     <label for="client-name" class="col-4 col-form-label">Ваше ім'я:</label>
-                                    <input class="form-control col-8" type="text" id="clientName" required  placeholder="Ім'я"/>
+                                    <input class="form-control col-8 client-name" type="text" id="client-name" required  placeholder="Ім'я"/>
                                 </div>
                                 <div class="form-group row">
                                     <label for="client-phone" class="col-4 col-form-label">Ваш телефон:</label>
-                                    <input class="form-control col-8" type="text" id="clientPhone" required  placeholder="Телефон"/>
+                                    <input class="form-control col-8 client-phone" type="text" id="client-phone" required  placeholder="Телефон"/>
                                 </div>
                             </form>
                         </div>
@@ -263,7 +263,7 @@
                       </div>
                     </div>
                     <div class="modal-footer justify-content-center">
-                        <button class="btn-main btn-accent order">Оформити замовлення</button>
+                        <button type="submit"  form="productForm" class="btn-main btn-accent order">Оформити замовлення</button>
                     </div>
                 </div>
             </div>
