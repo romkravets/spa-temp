@@ -48,10 +48,10 @@ class ServiceCart {
             'Content-Type': 'application/json'
           },
           body: JSON.stringify({
-            clientName: document.querySelector('#client-name').value,
-            clientРhone: document.querySelector('#client-phone').value,
-            service: document.querySelector('#title').innerHTML,
-            price: document.querySelector('#price').innerHTML,
+            clientName:  this.cartContainer.querySelector('.client-name').value,
+            clientPhone:  this.cartContainer.querySelector('.client-phone').value,
+            service:  this.cartContainer.querySelector('#title').innerHTML,
+            price:  this.cartContainer.querySelector('#price').innerHTML,
             cart: this.cart,
           })
         })
@@ -126,10 +126,10 @@ class TeachingCart {
             'Content-Type': 'application/json'
           },
           body: JSON.stringify({
-            clientName: document.querySelector('#client-name').value,
-            clientРhone: document.querySelector('#client-phone').value,
-            plan: document.querySelector('#titlePlan').innerHTML,
-            price: document.querySelector('#price').innerHTML,
+            clientName:  this.cartContainer.querySelector('.client-name').value,
+            clientPhone:  this.cartContainer.querySelector('.client-phone').value,
+            plan:  this.cartContainer.querySelector('#titlePlan').innerHTML,
+            price:  this.cartContainer.querySelector('#price').innerHTML,
             cart: this.cart,
           })
         })
@@ -198,7 +198,7 @@ class Cart {
       window.showAlert('Пожалуйста добавте товар для покупки', false);
       return;
     }
-    const form = this.cartContainer.querySelector('.form-contacts');
+    const form = this.cartContainer.querySelector('.form-contacts-product');
     if (form.checkValidity()) {
       ev.preventDefault();
       fetch('order', {
@@ -207,10 +207,10 @@ class Cart {
             'Content-Type': 'application/json'
           },
           body: JSON.stringify({
-            clientName: document.querySelector('#clientName').value,
-            clientEmail: document.querySelector('#clientPhone').value,
-            titleProduct: document.querySelector('#titleProduct').innerHTML,
-            priceProduct: document.querySelector('#priceProductSumm').innerHTML,
+            clientName:  this.cartContainer.querySelector('.client-name').value,
+            clientPhone:  this.cartContainer.querySelector('.client-phone').value,
+            titleProduct:  this.cartContainer.querySelector('#titleProduct').innerHTML,
+            priceProduct:  this.cartContainer.querySelector('#priceProductSumm').innerHTML,
             cart: this.cart,
           })
         })

@@ -25,14 +25,24 @@ app.post('/order', (req, res) => {
     },
   });
 
-  const htmlData = JSON.stringify(req.body);
-
   let mailOptions = {
-
     from: '"Fred Foo 👻" romann.kravets@gmail.com', // sender address
     to: "romann.kravets@gmail.com", // list of receivers
-    subject: "Замовлення з сайту", // Subject line
-    html: `<b>${htmlData}</b>`, // html body
+    subject: `Замовник: ${req.body.clientName}`,
+    html:`<h1>Конаткти замовника</h1>
+    <h2>Ім'я: ${req.body.clientName}</h2><br>
+    <h2>Телефон: ${req.body.clientPhone}</h2><br>
+    <hr/>
+    <h1>Послуга</h1>
+    <h2>Назва послуги: ${req.body.service}</h2><br>
+    <hr/>
+    <h1>Навчання</h1>
+    <h2>План навчання: ${req.body.plan}</h2><br>
+    <hr/>
+    <h1>Товар</h1>
+    <h2>Назва товару: ${req.body.titleProduct}</h2><br>
+    <h2>Ціна товару: ${req.body.priceProduct}</h2><br>
+    `
   };
 
   // send mail with defined transport object
