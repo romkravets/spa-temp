@@ -24,8 +24,6 @@ app.post('/order', (req, res) => {
       pass: 'VJ3VWHf21F9sjR1Rzk', // generated ethereal password
     },
   });
-  console.log(req.body);
-  const data = JSON.stringify(req.body);
 
   let mailOptions = {
     from: '"Fred Foo 👻" romann.kravets@gmail.com', // sender address
