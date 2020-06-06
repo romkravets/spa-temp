@@ -92,7 +92,7 @@ class TeachingCart {
     for (const id in this.cart) {
       const plan = await this.productService.getTeachsById(id);
       cartDomSting += `
-                <div class="row align-items-center" data-id="${id}">
+                <div class="row align-items-center ${plan.category}" data-id="${id}">
                   <div class="col-5">
                     <img class="img-fluid" src="${plan.image}" alt="${plan.title}">
                   </div>
@@ -207,8 +207,8 @@ class Cart {
             'Content-Type': 'application/json'
           },
           body: JSON.stringify({
-            clientName: document.querySelector('#client-name').value,
-            clientEmail: document.querySelector('#client-phone').value,
+            clientName: document.querySelector('#clientName').value,
+            clientEmail: document.querySelector('#clientPhone').value,
             titleProduct: document.querySelector('#titleProduct').innerHTML,
             priceProduct: document.querySelector('#priceProductSumm').innerHTML,
             cart: this.cart,
