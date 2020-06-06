@@ -6,27 +6,35 @@
 
 const express = require('express');
 const bodyParser = require('body-parser');
+const exphbs = require('express-handlebars');
+const nodemailer = require('nodemailer');
 const path = require('path');
+
+
 const app = express();
 
-app.use(bodyParser.json());
+
+
+//View
+app.engine('handlebars', exphbs());
+app.set('view engene', 'handlebars');
+
+//Static folder
 app.use(express.static(path.resolve(__dirname, './')));
+
+//Body Parser
+app.use(bodyParser.urlencoded({extended: false}));
+app.use(bodyParser.json());
+
+
+
+app.get('/', (req, res) => {
+  res.send('Hello');
+})
 
 app.post('/order', (req, res) => {
   const fs = require('fs');
   fs.appendFile('./orders.txt', JSON.stringify(req.body) + '\n', function(err) {
-    if (err) {
-      res.status(500).send('Server error');
-      return console.log(err);
-    }
-    console.log('Data saved: ' + JSON.stringify(req.body));
-    res.send('Data saved');
-  });
-});
-
-app.post('/order-teach', (req, res) => {
-  const fs = require('fs');
-  fs.appendFile('./order-teach.txt', JSON.stringify(req.body) + '\n', function(err) {
     if (err) {
       res.status(500).send('Server error');
       return console.log(err);
