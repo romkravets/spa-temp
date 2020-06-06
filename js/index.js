@@ -3,6 +3,8 @@ class Secvice {
   constructor(cart) {
       this.cart = cart;
       this.containerSecvicesHolistic = document.querySelector('.secvices-holistic');
+      this.conteinerServicesTerraude = document.querySelector('.secvices-terraude');
+      this.containerServicePrograms = document.querySelector('.service-programs');
       this.productService = new Services();
       this.productService
         .getService()
@@ -12,48 +14,52 @@ class Secvice {
     async renderServices() {
       let productListDomString = '';
       const secvices = await this.productService.getService();
-      secvices.forEach((secvice) => {
-        if(secvice.position === 'right') {
-          productListDomString += `
-          <div class="col-12 col-lg-6 mb-4">
-                  <div class="card">
-                  <div class="row no-gutters">
-                      <div class="col-sm-7">
-                          <div class="card-body">
-                              <h3 class="card-title">${secvice.title}</h3>
-                              <p class="card-text">${secvice.description}</p>
-                              <button class="btn-main btn-accent btn-service" id="sreviceSend">Замовити</button>
-                          </div>
+      secvices.forEach((service) => {
+            console.log(secvices, "services");
+            console.log(service, "service");
+          if(service.position === 'right') {
+            productListDomString += `
+            <div class="col-12 col-lg-6 mb-4 ${service.category}">
+                    <div class="card">
+                    <div class="row no-gutters">
+                        <div class="col-sm-7">
+                            <div class="card-body">
+                                <h3 class="card-title">${service.title}</h3>
+                                <p class="card-text">${service.description}</p>
+                                <button class="btn-main btn-accent btn-service" id="sreviceSend">Замовити</button>
+                            </div>
+                        </div>
+                        <div class="col-sm-5">
+                          <img  class="card-img-top h-100" src="${service.image}" alt="${service.title}">
                       </div>
-                      <div class="col-sm-5">
-                        <img  class="card-img-top h-100" src="${secvice.image}" alt="${secvice.title}">
                     </div>
-                  </div>
-              </div>
-              </div>
-          `
-        } else {
-          productListDomString += `
-            <div class="col-12 col-lg-6 mb-4">
-            <div class="card">
-              <div class="row no-gutters">
-                  <div class="col-sm-5">
-                      <img class="card-img-top h-100" src="${secvice.image}"  alt="${secvice.title}">
-                  </div>
-                  <div class="col-sm-7">
-                      <div class="card-body">
-                          <h3 class="card-title">${secvice.title}</h3>
-                          <p class="card-text">${secvice.description}</p>
-                          <button class="btn-main btn-accent btn-service" id="sreviceSend">Замовити</button>
-                      </div>
-                  </div>
-              </div>
-          </div>
-          </div>
-            `;
-        }
-      });
+                </div>
+                </div>
+            `
+          } else {
+            productListDomString += `
+              <div class="col-12 col-lg-6 mb-4 ${service.category}">
+              <div class="card">
+                <div class="row no-gutters">
+                    <div class="col-sm-5">
+                        <img class="card-img-top h-100" src="${service.image}"  alt="${service.title}">
+                    </div>
+                    <div class="col-sm-7">
+                        <div class="card-body">
+                            <h3 class="card-title">${service.title}</h3>
+                            <p class="card-text">${service.description}</p>
+                            <button class="btn-main btn-accent btn-service" id="sreviceSend">Замовити</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+              `;
+          }
+        });
       this.containerSecvicesHolistic.innerHTML = productListDomString;
+      this.conteinerServicesTerraude.innerHTML = productListDomString;
+      this.containerServicePrograms.innerHTML = productListDomString;
     }
 
     addEventListeners() {
