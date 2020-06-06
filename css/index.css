@@ -250,6 +250,21 @@ body.offcanvas-active{
 }
 /* Title container */
 
+
+
+/* Card display */
+.secvices-holistic .programs, .secvices-holistic .terraude {
+    display: none;
+}
+.service-programs .holistic,  .service-programs .terraude {
+    display: none;
+}
+.secvices-terraude .programs, .secvices-terraude .holistic {
+    display: none;
+}
+/* Card display */
+
+
 /*Service section*/
 
 .services-img-small {

@@ -31,3 +31,20 @@ class TeachService {
         return teachs.find(teach => teach.id === id);
     }
 }
+
+class Services {
+    constructor() {
+        if (!Services._instance) Services._instance = this;
+        return Services._instance;
+    }
+    async getService() {
+        if (!this.services) {
+            this.services = await (await fetch('secvices.json')).json();
+        }
+        return this.services;
+    }
+    async getServicesById(id) {
+        const services = await this.getService();
+        return services.find(service => service.id === id);
+    }
+}
