@@ -1,3 +1,11 @@
 {"clientName":"qeqweq","clientEmail":"09678474664","titleProduct":"Гель для догляду з арніки проти набряків і гематом - Laboratories Ineldea","priceProduct":"404","cart":{"016":0}}
 {"clientName":"Ромн","clientEmail":"096747474774","titleProduct":"Масаж з нуля","priceProduct":"2000","cart":{"1":0}}
 {"clientName":"","clientEmail":"","titleProduct":"Гель для догляду з арніки проти набряків і гематом - Laboratories Ineldea","priceProduct":"404","cart":{"016":0}}
+{"clientName":"Svz","clientРhone":"097858446","plan":"Масаж для жінок","price":"500","cart":{"3":0}}
+{"clientName":"Роман","clientРhone":"09676767676767","plan":"Експрес масаж","price":"400","cart":{"1":0}}
+{"clientName":"Роман","clientРhone":"09676767676767","plan":"Експрес масаж","price":"400","cart":{}}
+{"clientName":"оман","clientРhone":"цуацуацуаццуацуа","plan":"Фасціальна пластика тіла та обличчя за методикою Ірен Террауди","price":"1000","cart":{"7":0}}
+{"clientName":"оман","clientРhone":"цуацуацуаццуацуа","plan":"Фасціальна пластика тіла та обличчя за методикою Ірен Террауди","price":"1000","cart":{}}
+{"clientName":"уцуауа","clientРhone":"352352352","service":"Стоун масаж","price":"1000","cart":{"11":0}}
+{"clientName":"цуауауц","clientРhone":"35345345","plan":"Базовий рівень","price":"5000","cart":{"2":0}}
+{"clientName":"","clientEmail":"","titleProduct":"Гель для догляду з арніки проти набряків і гематом - Laboratories Ineldea","priceProduct":"404","cart":{"012":0}}
