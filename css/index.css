@@ -1,8 +1,5 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap'); */
-/* @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap'); */
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:wght@400;500;700&display=swap');
-
 
 :root {
     scroll-behavior: smooth;
@@ -70,7 +67,6 @@ html body {
     text-transform: uppercase;
 }
 
-
 .btn-main {
     font-size: 1rem;
     padding: 10px 30px;
@@ -82,7 +78,6 @@ html body {
 .btn-main:focus {
     outline: none;
 }
-
 
 .btn-accent {
     background: none repeat scroll 0 0 #00a046;
@@ -250,8 +245,6 @@ body.offcanvas-active{
 }
 /* Title container */
 
-
-
 /* Card display */
 .secvices-holistic .programs, .secvices-holistic .terraude {
     display: none;
@@ -413,13 +406,6 @@ body.offcanvas-active{
     border: 2px solid #808080;
 }
 
-/* .footer-section .social-media li a {
-    font-weight: 400;
-    line-height: 30px;
-    color: #999999;
-    font-size: 13px;
-} */
-
 .footer-section .social-media li a img {
     width: 20px;
     height: 20px;
@@ -441,10 +427,6 @@ body.offcanvas-active{
 .footer-section .social-media li a:hover a::before {
     color: #d77400;
 }
-
-/* .tfacesocial_inner li.facebook a::before {
-    content:  url('../img/icons/open-menu.svg');
-} */
 
 .footer-section .social-media li a::before {
     font-size: 15px;
@@ -482,46 +464,6 @@ body.offcanvas-active{
     font-size: 14px;
 }
 
-/* .top_button {
-    position: fixed;
-    border: 1px solid #a0a0a0;
-    border-radius: 100%;
-    width: 40px;
-    height: 40px;
-    line-height: 35px;
-    right: 20px;
-    bottom: 50px;
-    font-size: 14px;
-    color: #d77400;
-    display: none;
-    z-index: 2;
-    transition: all .3s ease;
-    text-align: center;
-} */
-
-/* .top-button a span {
-    position:absolute;
-    top:50%;
-    left:50%;
-    margin-left:-8px;
-    margin-top:-12px;
-    height:0;
-    width:0;
-    border:8px solid transparent;
-    border-bottom-color:#ffffff;
-}
-
-.top-button a::after {
-    content: "";
-    background-image: url('../img/icons/up-arrow.svg');
-}
-
-.top-button:hover {
-    background-color:#e74c3c;
-    opacity:1;filter:"alpha(opacity=100)";
-    -ms-filter:"alpha(opacity=100)";
-} */
-
 /* Footer-section */
 
 /* Prodact section */
@@ -536,27 +478,15 @@ body.offcanvas-active{
     transition: var(--main-transition);
 }
 
-/* .title-wrap {
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    background: #ffffff;
-    border-radius: 5px;
-}
-
-.title-width {
-    width: 95%;
-} */
-
-.card .card-title {
+/* .card .card-title {
     font-size: 18px;
     font-weight: 400;
     margin: 10px 0 0 0;
-    height: 80px;
+    height: 50px;
     position: relative;
     overflow: hidden;
     width: 100%;
-}
+} */
 
 .card .card-title::after {
     content: '';
@@ -569,6 +499,27 @@ body.offcanvas-active{
     background: -ms-linear-gradient(top,rgba(255,255,255,0),#fff 100%,#fff 10%,#fff);
     background: linear-gradient("to bottom",rgba(255,255,255,0),#fff 100%,#fff 10%,#fff);
 }
+
+
+.services .card .card-title {
+    font-weight: 400;
+    margin: 10px 0 0 0;
+    height: 56px;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+
+.products-section .card .card-title {
+    font-size: 18px;
+    font-weight: 400;
+    margin: 10px 0 0 0;
+    height: 80px;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+
 
 .prod {
     display: none;
@@ -634,8 +585,8 @@ body.offcanvas-active{
 }
 
 .modal .close img {
-    width: 25px;
-    height: 25px;
+    width: 20px;
+    height: 20px;
 }
 
 .modal-content {
@@ -647,6 +598,29 @@ input:focus, input[type]:focus, .uneditable-input:focus {
     border-color: rgba(215, 116, 0, 0.8);
     box-shadow: 0 1px 1px rgba(215, 116, 0, 0.075) inset, 0 0 8px rgba(215, 116, 0, 0.6);
     outline: 0 none;
+}
+
+@media (max-width: 768px) {
+    #modal-products h5,  #modal-products h4{
+        font-size: 16px;
+    }
+    #modal-products .col-form-label {
+        font-size: 13px;
+    }
+
+    #modal-teaching h3 {
+        font-size: 18px;
+    }
+    #modal-teaching h4 {
+        font-size: 16px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .modal .col-form-label {
+        font-size: 13px;
+    }
 }
 
 /* Modal */
