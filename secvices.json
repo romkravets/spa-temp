@@ -1,0 +1,75 @@
+[
+   {
+       "id": "1",
+       "title": "Експрес масаж",
+       "image": ["https://images.unsplash.com/photo-1544161515-4ab6ce6db874?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80"],
+       "description": "This is a wider card with supporting text below as a natural lead-in to additional content.",
+       "price": 400,
+       "new": false,
+       "sale": false,
+       "category": "holistic",
+       "priceSale": "",
+       "position": "left"
+   },
+   {
+       "id": "2",
+       "title": "Антистрес масаж",
+       "image": ["https://images.unsplash.com/photo-1544161515-4ab6ce6db874?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80"],
+       "description": "This is a wider card with supporting text below as a natural lead-in to additional content.",
+       "price": 300,
+       "new": false,
+       "sale": false,
+       "category": "holistic",
+       "priceSale": "",
+       "position": "right"
+   },
+   {
+      "id": "3",
+      "title": "Масаж для жінок",
+      "image": ["https://images.unsplash.com/photo-1544161515-4ab6ce6db874?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80"],
+      "description": "This is a wider card with supporting text below as a natural lead-in to additional content.",
+      "price": 500,
+      "new": false,
+      "sale": false,
+      "category": "qualifications-up",
+      "priceSale": "holistic",
+      "position": "left"
+  },
+  {
+      "id": "4",
+      "title": "Масаж для чоловіків",
+      "image": ["https://images.unsplash.com/photo-1544161515-4ab6ce6db874?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80"],
+      "description": "This is a wider card with supporting text below as a natural lead-in to additional content.",
+      "price": 500,
+      "new": false,
+      "sale": false,
+      "category": "holistic",
+      "priceSale": "",
+      "position": "right"
+   },
+   {
+      "id": "5",
+      "title": "Масаж обличчя",
+      "image": ["https://images.unsplash.com/photo-1544161515-4ab6ce6db874?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80"],
+      "description": "This is a wider card with supporting text below as a natural lead-in to additional content.",
+      "price": 100,
+      "new": false,
+      "sale": false,
+      "category": "holistic",
+      "priceSale": "",
+      "position": "left"
+   },
+   {
+      "id": "6",
+      "title": "Масаж стоп",
+      "image": ["https://images.unsplash.com/photo-1544161515-4ab6ce6db874?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80"],
+      "description": "This is a wider card with supporting text below as a natural lead-in to additional content.",
+      "price": 210,
+      "new": false,
+      "sale": false,
+      "category": "holistic",
+      "priceSale": "",
+      "position": "right"
+   }
+
+]
