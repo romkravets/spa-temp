@@ -5,10 +5,12 @@
     scroll-behavior: smooth;
     --main-font: 'Fira Sans Condensed', sans-serif;
     --accent-font: 'Cormorant Garamond', serif;
+
     --bg-body: rgb(255, 255, 255);
     --bg-top-header: rgb(215, 116, 0);
     --bg-section-darken: linear-gradient(180deg, #090810 0%, #171236 100%);
     --bg-footer: linear-gradient(180deg, #090810 0%, #171236 100%);
+
     --color-light: rgb(255, 255, 255);
     --accent-color: rgb(215, 116, 0);
     --color-paragraph: rgb(102, 102, 102);
@@ -40,6 +42,7 @@ html body {
     transition: color 0.25s 0.0833333333s;
     position: relative;
 }
+
 .draw-border::before, .draw-border::after {
     border: 0 solid transparent;
     content: '';
@@ -50,29 +53,36 @@ html body {
     bottom: 0;
     right: 0;
 }
+
 .draw-border::before {
     border-bottom-width: 4px;
     border-left-width: 4px;
 }
+
 .draw-border::after {
     border-top-width: 4px;
     border-right-width: 4px;
 }
+
 .draw-border:hover {
     color: rgb(255, 229, 147);
 }
+
 .draw-border:hover::before, .draw-border:hover::after {
     border-color: rgb(255, 229, 147);
     transition: border-color 0s, width 0.25s, height 0.25s;
     width: 100%;
     height: 100%;
 }
+
 .draw-border:hover::before {
     transition-delay: 0s, 0s, 0.25s;
 }
+
 .draw-border:hover::after {
     transition-delay: 0s, 0.25s, 0s;
 }
+
 .btn {
     background: none;
     border: none;
@@ -87,7 +97,7 @@ html body {
     text-decoration: none;
     border: none;
     border-radius: 0;
-    }
+}
 
 .btn-main:focus {
     outline: none;
@@ -114,53 +124,54 @@ html body {
 }
 
 /* Button */
-
 /* Sections base style */
-
 .main-container {
     padding: 80px 0 105px;
 }
 
 /* Sections base style */
-
 /* header */
-body.offcanvas-active{
-	overflow: hidden;
+body.offcanvas-active {
+    overflow: hidden;
 }
-.offcanvas-header{
-    display:none;
+
+.offcanvas-header {
+    display: none;
 }
 
 @media (max-width: 992px) {
-  .offcanvas-header{
-      display:block;
+    .offcanvas-header {
+        display:block;
     }
 
-   .offcanvas-header h5 {
+    .offcanvas-header h5 {
         font-family: var(--accent-font);
         text-transform: uppercase;
     }
-  .navbar-collapse {
-    position: fixed;
-    top:0;
-    bottom: 0;
-    left: 100%;
-    width: 100%;
-    padding-right: 1rem;
-    padding-left: 1rem;
-    overflow-y: auto;
-    visibility: hidden;
-    background-color: black;
-    transition: visibility .2s ease-in-out, transform .2s ease-in-out;
-    z-index: 10;
-  }
-  .navbar-collapse.show {
-    visibility: visible;
-    transform: translateX(-100%);
-  }
-  .navbar-collapse .btn-close img{
-    width: 25px;
-  }
+
+    .navbar-collapse {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 100%;
+        width: 100%;
+        padding-right: 1rem;
+        padding-left: 1rem;
+        overflow-y: auto;
+        visibility: hidden;
+        background-color: black;
+        transition: visibility .2s ease-in-out, transform .2s ease-in-out;
+        z-index: 10;
+    }
+
+    .navbar-collapse.show {
+        visibility: visible;
+        transform: translateX(-100%);
+    }
+
+    .navbar-collapse .btn-close img {
+        width: 25px;
+    }
 }
 
 .bg-header {
@@ -198,6 +209,7 @@ body.offcanvas-active{
     text-transform: uppercase;
     height: 65px;
 }
+
 @media (min-width: 992px) {
     .navbar ul > li > a:hover {
         background: var(--color-light);
@@ -210,6 +222,7 @@ body.offcanvas-active{
     .navbar ul > li {
         border-bottom: 1px solid var(--color-light);
     }
+
     .navbar ul > li:hover, .navbar ul > li > a:hover {
         border-bottom: 1px solid var(--accent-color);
         color: var(--accent-color);
@@ -222,7 +235,6 @@ body.offcanvas-active{
 }
 
 /* header */
-
 /*Intro section*/
 .intro {
     color: var(--color-light);
@@ -232,6 +244,7 @@ body.offcanvas-active{
 .intro .main-title {
     font-family: var(--accent-font);
 }
+
 .intro .main-img {
     max-height: 550px;
 }
@@ -244,7 +257,6 @@ body.offcanvas-active{
 }
 
 /*Intro section*/
-
 /* Title container */
 .title-container .title {
     font-size: 4rem;
@@ -257,23 +269,23 @@ body.offcanvas-active{
 .text-light {
     color: var(--color-light);
 }
-/* Title container */
 
+/* Title container */
 /* Card display */
 .secvices-holistic .programs, .secvices-holistic .terraude {
     display: none;
 }
-.service-programs .holistic,  .service-programs .terraude {
+
+.service-programs .holistic, .service-programs .terraude {
     display: none;
 }
+
 .secvices-terraude .programs, .secvices-terraude .holistic {
     display: none;
 }
+
 /* Card display */
-
-
 /*Service section*/
-
 .services-img-small {
     width: 211px;
     height: 211px;
@@ -294,6 +306,7 @@ body.offcanvas-active{
     display: inline-block;
     margin-bottom: 10px;
 }
+
 .services .title-service {
     font-size: 20px;
     text-transform: uppercase;
@@ -315,7 +328,6 @@ body.offcanvas-active{
 }
 
 /*Service section*/
-
 .trachining-section {
     background: url(../img/images/bg-teaching.png) no-repeat;
     background-size: cover;
@@ -374,11 +386,10 @@ body.offcanvas-active{
 }
 
 .trachining-section .qualifications-up .btn-main {
-    background-color:  var(--plan-qualifications-color);
+    background-color: var(--plan-qualifications-color);
 }
 
 /* Footer-section */
-
 .footer-section {
     padding: 30px 0 10px 0;
     display: flex;
@@ -473,10 +484,7 @@ body.offcanvas-active{
 }
 
 /* Footer-section */
-
 /* Prodact section */
-
-
 .card {
     height: 100%;
 }
@@ -558,7 +566,6 @@ body.offcanvas-active{
 /* .nav-tabs .nav-item:hover {
     border: 1px solid var(--accent-color);
 } */
-
 .nav-tabs .nav-link:focus, .nav-tabs .nav-link:hover {
     border-color: transparent;
 }
@@ -572,10 +579,8 @@ body.offcanvas-active{
 }
 
 /* Product section */
-
 /* Modal */
-
-#modal-products  .modal-header, #modal-teaching  .modal-header {
+#modal-products .modal-header, #modal-teaching .modal-header {
     background: var(--moda-header-color);
     text-transform: uppercase;
 }
@@ -600,6 +605,7 @@ input:focus, input[type]:focus, .uneditable-input:focus {
 .modal .start-course h3 {
     color: var(--plan-start-color);
 }
+
 .modal .basic-course h3 {
     color: var(--plan-basic-color);
 }
@@ -608,11 +614,11 @@ input:focus, input[type]:focus, .uneditable-input:focus {
     color: var(--plan-qualifications-color);
 }
 
-
 @media (max-width: 768px) {
-    #modal-products h5,  #modal-products h4{
+    #modal-products h5, #modal-products h4 {
         font-size: 16px;
     }
+
     #modal-products .col-form-label {
         font-size: 13px;
     }
@@ -620,6 +626,7 @@ input:focus, input[type]:focus, .uneditable-input:focus {
     #modal-teaching h3 {
         font-size: 18px;
     }
+
     #modal-teaching h4 {
         font-size: 16px;
     }
@@ -630,5 +637,4 @@ input:focus, input[type]:focus, .uneditable-input:focus {
         font-size: 13px;
     }
 }
-
 /* Modal */
