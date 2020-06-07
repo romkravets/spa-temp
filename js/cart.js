@@ -1,6 +1,6 @@
 class ServiceCart {
   constructor() {
-    this.cartContainer = document.querySelector('#modal-teaching');
+    this.cartContainer = document.querySelector('#modal-services');
     this.cart = {};
     this.addEventListeners();
     this.productService = new Services();
@@ -8,6 +8,9 @@ class ServiceCart {
   addEventListeners() {
     this.cartContainer
       .querySelector('.order')
+      .addEventListener('click', ev => this.order(ev));
+    this.cartContainer
+      .querySelector('.order-two')
       .addEventListener('click', ev => this.order(ev));
   }
   async renderCart() {
@@ -41,6 +44,12 @@ class ServiceCart {
   order(ev) {
     const form = this.cartContainer.querySelector('.form-contacts');
     if (form.checkValidity()) {
+      let performer = '';
+      if (ev.target.innerHTML === 'Інші спеціалісти') {
+          performer = 'Інші спеціалісти';
+        } else if (ev.target.innerHTML === 'Юрій Мартюк') {
+          performer = 'Юрій Мартюк';
+      }
       ev.preventDefault();
       fetch('order', {
           method: 'POST',
@@ -52,6 +61,7 @@ class ServiceCart {
             clientPhone:  this.cartContainer.querySelector('.client-phone').value,
             service:  this.cartContainer.querySelector('#title').innerHTML,
             price:  this.cartContainer.querySelector('#price').innerHTML,
+            performer: performer,
             cart: this.cart,
           })
         })

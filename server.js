@@ -35,6 +35,7 @@ app.post('/order', (req, res) => {
     <hr/>
     <h1>Послуга</h1>
     <h2>Назва послуги: ${req.body.service}</h2><br>
+    <h2>Виконавець: ${req.body.performer}</h2><br>
     <hr/>
     <h1>Навчання</h1>
     <h2>План навчання: ${req.body.plan}</h2><br>

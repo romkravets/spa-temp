@@ -9,3 +9,39 @@
 {"clientName":"уцуауа","clientРhone":"352352352","service":"Стоун масаж","price":"1000","cart":{"11":0}}
 {"clientName":"цуауауц","clientРhone":"35345345","plan":"Базовий рівень","price":"5000","cart":{"2":0}}
 {"clientName":"","clientEmail":"","titleProduct":"Гель для догляду з арніки проти набряків і гематом - Laboratories Ineldea","priceProduct":"404","cart":{"012":0}}
+{"clientName":"йцвйцйц","clientPhone":"йцвйцв","service":"Класичний масаж спини","price":"1000","performer":"Інші спеціалісти","cart":{"8":0}}
+{"clientName":"укеукеукееееее","clientPhone":"3455345345","service":"Класичний масаж всього тіла","price":"1000","performer":"Інші спеціалісти","cart":{"9":0}}
+{"clientName":"ццццц","clientPhone":"1111","titleProduct":"Гель для догляду з арніки проти набряків і гематом - Laboratories Ineldea","priceProduct":"404","cart":{"012":0}}
+{"clientName":"кккк","clientPhone":"333","plan":"Базовий рівень","price":"5000","cart":{"2":0}}
+{"clientName":"4234","clientPhone":"3434","service":"Експрес масаж","price":"400","performer":"Інші спеціалісти","cart":{"1":0}}
+{"clientName":"йцк23к","clientPhone":"23к23","service":"Експрес масаж","price":"400","performer":"Юрій Мартюк","cart":{"1":0}}
+{"clientName":"тннннн","clientPhone":"44444","service":"Масаж для жінок","price":"500","performer":"Інші спеціалісти","cart":{"3":0}}
+{"clientName":"уукук","clientPhone":"223434","service":"Експрес масаж","price":"400","performer":"Інші спеціалісти","cart":{"1":0}}
+{"clientName":"ntcyy","clientPhone":"323434","service":"Експрес масаж","price":"400","performer":"Інші спеціалісти","cart":{"1":0}}
+{"clientName":"wdqwd","clientPhone":"qwdqwd","service":"Експрес масаж","price":"400","performer":"Інші спеціалісти","cart":{"1":0}}
+{"clientName":"wqqweqwe","clientPhone":"22222","service":"Експрес масаж","price":"400","performer":"Інші спеціалісти","cart":{"1":0}}
+{"clientName":"qwdqwd","clientPhone":"qwdqwd","service":"Експрес масаж","price":"400","performer":"Інші спеціалісти","cart":{"1":0}}
+{"clientName":"qwdqwd","clientPhone":"qwdqwd","service":"Експрес масаж","price":"400","performer":"Інші спеціалісти","cart":{"1":0}}
+{"clientName":"qwdqwd","clientPhone":"dd","service":"Антистрес масаж","price":"300","performer":"Інші спеціалісти","cart":{"2":0}}
+{"clientName":"qwdqwd","clientPhone":"dd","service":"Антистрес масаж","price":"300","performer":"Інші спеціалісти","cart":{"2":0}}
+{"clientName":"qwdqwd","clientPhone":"dd","service":"Антистрес масаж","price":"300","performer":"Інші спеціалісти","cart":{"2":0}}
+{"clientName":"qwdqwd","clientPhone":"dd","service":"Антистрес масаж","price":"300","performer":"Інші спеціалісти","cart":{"2":0}}
+{"clientName":"qwdwd","clientPhone":"4444","service":"Антистрес масаж","price":"300","performer":"Інші спеціалісти","cart":{"2":0}}
+{"clientName":"qwdwd","clientPhone":"4444","service":"Антистрес масаж","price":"300","performer":"Інші спеціалісти","cart":{"2":0}}
+{"clientName":"qwdwd","clientPhone":"4444","service":"Антистрес масаж","price":"300","performer":"Інші спеціалісти","cart":{"2":0}}
+{"clientName":"qwdwd","clientPhone":"4444","service":"Антистрес масаж","price":"300","performer":"Інші спеціалісти","cart":{"2":0}}
+{"clientName":"qwdwd","clientPhone":"4444","service":"Антистрес масаж","price":"300","performer":"Інші спеціалісти","cart":{"2":0}}
+{"clientName":"4234","clientPhone":"4444","service":"Антистрес масаж","price":"300","performer":"Інші спеціалісти","cart":{"2":0}}
+{"clientName":"Роман","clientPhone":"0969271707","service":"Експрес масаж","price":"400","performer":"Інші спеціалісти","cart":{"1":0}}
+{"clientName":"ntcn","clientPhone":"54645635","service":"Антистрес масаж","price":"300","performer":"Інші спеціалісти","cart":{"2":0}}
+{"clientName":"qwdqdqwd","clientPhone":"23424234","service":"Експрес масаж","price":"400","performer":"Інші спеціалісти","performerTwo":"Юрій Мартюк","cart":{"1":0}}
+{"clientName":"qwdqwdqwd","clientPhone":"235235","service":"Експрес масаж","price":"400","performer":"Інші спеціалісти","performerTwo":"Юрій Мартюк","cart":{"1":0}}
+{"clientName":"234234","clientPhone":"efefwef","service":"Масаж стоп","price":"210","performer":"Інші спеціалісти","performerTwo":"Юрій Мартюк","cart":{"6":0}}
+{"clientName":"33333","clientPhone":"55555","service":"Експрес масаж","price":"400","performer":"Інші спеціалісти","performerTwo":"Юрій Мартюк","cart":{"1":0}}
+{"clientName":"qwdqwd","clientPhone":"qwdqwd","service":"Експрес масаж","price":"400","performer":"Інші спеціалісти","performerTwo":"Юрій Мартюк","cart":{"1":0}}
+{"clientName":"qwwqdqw","clientPhone":"qwdqwd","service":"Експрес масаж","price":"400","performer":"Інші спеціалісти","performerTwo":"Юрій Мартюк","cart":{"1":0}}
+{"clientName":"qwdqwd","clientPhone":"dqwd","service":"Експрес масаж","price":"400","performer":"Інші спеціалісти","performerTwo":"Юрій Мартюк","cart":{"1":0}}
+{"clientName":"qwdqwd","clientPhone":"qwdqwd","service":"Експрес масаж","price":"400","performer":"Інші спеціалісти","performerTwo":"Юрій Мартюк","cart":{"1":0}}
+{"clientName":"qwfwef","clientPhone":"wefwef","service":"Експрес масаж","price":"400","performer":"Інші спеціалісти","performerTwo":"Юрій Мартюк","cart":{"1":0}}
+{"clientName":"Роман Тест","clientPhone":"3483459348934589","service":"Експрес масаж","price":"400","performer":"Юрій Мартюк","cart":{"1":0}}
+{"clientName":"Тест два","clientPhone":"4234234","service":"Експрес масаж","price":"400","performer":"Інші спеціалісти","cart":{"1":0}}
