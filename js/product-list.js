@@ -195,6 +195,13 @@ class ProductList {
       .querySelectorAll('.btnTab')
       .forEach(button =>
         button.addEventListener('click', event =>
+          event.stopPropagation()
+        )
+      );
+    document
+      .querySelectorAll('.btnTab')
+      .forEach(button =>
+        button.addEventListener('mouseover', event =>
           this.handleTabProduct(event)
         )
       );
