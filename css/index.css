@@ -129,6 +129,12 @@ html body {
     padding: 80px 0 105px;
 }
 
+@media only screen and (max-width: 768px) {
+    .main-container {
+        padding: 50px 0 75px;
+    }
+}
+
 /* Sections base style */
 /* header */
 body.offcanvas-active {
@@ -270,6 +276,11 @@ body.offcanvas-active {
     color: var(--color-light);
 }
 
+@media only screen and (max-width: 768px) {
+    .title-container .title-section {
+        font-size: 3rem;
+    }
+
 /* Title container */
 /* Card display */
 .secvices-holistic .programs, .secvices-holistic .terraude {
@@ -301,6 +312,11 @@ body.offcanvas-active {
     margin-bottom: 10px;
 }
 
+@media only screen and (max-width: 768px) {
+    .services .title {
+        font-size: 1.5rem;
+}
+
 .services h3 {
     font-size: 22px;
     display: inline-block;
@@ -312,6 +328,11 @@ body.offcanvas-active {
     text-transform: uppercase;
     color: var(--color-paragraph);
     padding-bottom: 40px;
+}
+
+@media only screen and (max-width: 768px) {
+    .services .title-service {
+        font-size: 18px;
 }
 
 .services p {
@@ -513,6 +534,12 @@ body.offcanvas-active {
     position: relative;
     overflow: hidden;
     width: 100%;
+}
+
+@media only screen and (max-width: 768px) {
+    .services .card .card-title {
+        height: 50px;
+    }
 }
 
 .products-section .card .card-title {
