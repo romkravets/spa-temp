@@ -29,18 +29,18 @@ $(function () {
     $("body").removeClass("offcanvas-active");
   });
  //Moble menu
-
-   $('form input[type=text]').on('change invalid', function() {
-        var textfield = $(this).get(0);
-        textfield.setCustomValidity('');
-        if (!textfield.validity.valid) {
-        textfield.setCustomValidity('Заповніть будь ласка пусте поле');
-        }
-    });
-
-    $('.nav-tabs .nav-link').hover(function() {
-        $(this).trigger('click');
-    }, function() { });
 });
 
+
+$('form input[type=text]').on('change invalid', function() {
+    var textfield = $(this).get(0);
+    textfield.setCustomValidity('');
+    if (!textfield.validity.valid) {
+    textfield.setCustomValidity('Заповніть будь ласка пусте поле');
+    }
+});
+
+$('.nav-tabs .nav-link').hover(function() {
+    $(this).trigger('click');
+}, function() { });
 
