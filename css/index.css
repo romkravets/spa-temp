@@ -264,7 +264,7 @@ body.offcanvas-active {
 
 /*Intro section*/
 /* Title container */
-.title-container .title {
+.title-container .title-section {
     font-size: 4rem;
 }
 
@@ -276,10 +276,11 @@ body.offcanvas-active {
     color: var(--color-light);
 }
 
-@media only screen and (max-width: 768px) {
+@media (max-width: 768px) {
     .title-container .title-section {
         font-size: 3rem;
     }
+}
 
 /* Title container */
 /* Card display */
@@ -312,9 +313,10 @@ body.offcanvas-active {
     margin-bottom: 10px;
 }
 
-@media only screen and (max-width: 768px) {
+@media (max-width: 768px) {
     .services .title {
         font-size: 1.5rem;
+    }
 }
 
 .services h3 {
@@ -330,9 +332,10 @@ body.offcanvas-active {
     padding-bottom: 40px;
 }
 
-@media only screen and (max-width: 768px) {
+@media (max-width: 768px) {
     .services .title-service {
         font-size: 18px;
+    }
 }
 
 .services p {
@@ -536,7 +539,7 @@ body.offcanvas-active {
     width: 100%;
 }
 
-@media only screen and (max-width: 768px) {
+@media (max-width: 768px) {
     .services .card .card-title {
         height: 50px;
     }
