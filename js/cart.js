@@ -75,7 +75,7 @@ class ServiceCart {
         .then(responseText => {
           form.reset();
           this.cart = {};
-          window.showAlert('Дякую! ' + responseText);
+          window.showAlert('Дякуємо!');
           this.cartContainer.querySelector('.btn-close').click();
         })
         .catch(error => showAlert('Помилка: ' + error, false));
@@ -153,7 +153,7 @@ class TeachingCart {
         .then(responseText => {
           form.reset();
           this.cart = {};
-          window.showAlert('Дякую! ' + responseText);
+          window.showAlert('Дякуємо!');
           this.cartContainer.querySelector('.btn-close').click();
         })
         .catch(error => showAlert('Помилка: ' + error, false));
@@ -234,7 +234,7 @@ class Cart {
         .then(responseText => {
           form.reset();
           this.cart = {};
-          window.showAlert('Дякую! ' + responseText);
+          window.showAlert('Дякуємо!');
           this.cartContainer.querySelector('.btn-close').click();
         })
         .catch(error => showAlert('Помилка: ' + error, false));
