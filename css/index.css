@@ -583,7 +583,7 @@ body.offcanvas-active {
 
 /* Product section */
 /* Modal */
-#modal-products .modal-header, #modal-teaching .modal-header {
+#modal-products .modal-header, #modal-teaching .modal-header, #modal-services .modal-header {
     background: var(--moda-header-color);
     text-transform: uppercase;
 }

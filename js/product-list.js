@@ -23,7 +23,7 @@ class SecviceList {
                             <div class="card-body">
                                 <h3 class="card-title">${service.title}</h3>
                                 <p class="card-text">${service.description}</p>
-                                <button class="btn-main btn-accent btn-service buy-service" id="sreviceSend" data-id="${service.id}" data-toggle="modal" data-target="#modal-teaching">Замовити</button>
+                                <button class="btn-main btn-accent btn-service buy-service" id="sreviceSend" data-id="${service.id}" data-toggle="modal" data-target="#modal-services">Замовити</button>
                             </div>
                         </div>
                         <div class="col-md-5">
@@ -45,7 +45,7 @@ class SecviceList {
                         <div class="card-body">
                             <h3 class="card-title">${service.title}</h3>
                             <p class="card-text">${service.description}</p>
-                            <button class="btn-main btn-accent btn-service buy-service" id="sreviceSend" data-id="${service.id}" data-toggle="modal" data-target="#modal-teaching">Замовити</button>
+                            <button class="btn-main btn-accent btn-service buy-service" id="sreviceSend" data-id="${service.id}" data-toggle="modal" data-target="#modal-services">Замовити</button>
                         </div>
                     </div>
                 </div>
