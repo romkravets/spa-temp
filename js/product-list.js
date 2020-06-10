@@ -93,7 +93,7 @@ class TeachingList {
                                     <li>Hot Stone Massage</li>
                                     <li>Body Polish (1 hr)</li>
                                 </ul>
-                                <button class="btn-main btn-accent buy-teach order" data-toggle="modal" data-target="#modal-teaching" data-id="${teach.id}">Записатись</button>
+                                <button class="btn-main buy-teach order" data-toggle="modal" data-target="#modal-teaching" data-id="${teach.id}">Записатись</button>
                             </div>
                         </div>
                     `;

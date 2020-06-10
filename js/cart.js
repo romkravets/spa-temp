@@ -19,7 +19,7 @@ class ServiceCart {
       const service = await this.productService.getServicesById(id);
       cartDomSting += `
                 <div class="row align-items-center" data-id="${id}">
-                <div class="service-cart-img" style="background: url(${service.image}); min-height: 200px; background-position: center"></div>
+                <div class="service-cart-img" style="background: url(${service.image}); min-height: 200px; background-position: center; background-repeat:no-repeat"></div>
                 <div class="col-12 text-center">
                     <div class="mt-3">
                         <h3 id="title">${service.title}</h3>
@@ -101,10 +101,10 @@ class TeachingCart {
       const plan = await this.productService.getTeachsById(id);
       cartDomSting += `
                 <div class="row align-items-center ${plan.category}" data-id="${id}">
-                  <div class="col-5">
+                  <div class="col-12 p-0">
                     <img class="img-fluid" src="${plan.image}" alt="${plan.title}">
                   </div>
-                <div class="col-6 text-center p-0">
+                <div class="col-12 text-center p-0">
                     <div class="mt-3">
                         <h3 id="titlePlan">${plan.title}</h3>
                         <h4 class="text-center mt-3">Вартість:</h4>
