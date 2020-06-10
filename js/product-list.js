@@ -14,45 +14,38 @@ class SecviceList {
       let productListDomString = '';
       const secvices = await this.productService.getService();
       secvices.forEach((service) => {
-          if(service.position === 'right') {
+          // if(service.position === 'right') {
             productListDomString += `
-            <div class="col-12 col-lg-6 mb-4 ${service.category}">
-                    <div class="card">
-                    <div class="row no-gutters">
-                        <div class="col-md-7 order-1 order-md-0"">
-                            <div class="card-body">
-                                <h3 class="card-title">${service.title}</h3>
-                                <p class="card-text">${service.description}</p>
-                                <button class="btn-main btn-accent btn-service buy-service" id="sreviceSend" data-id="${service.id}" data-toggle="modal" data-target="#modal-services">Замовити</button>
-                            </div>
-                        </div>
-                        <div class="col-md-5">
-                          <img  class="card-img-top h-100" src="${service.image}" alt="${service.title}">
-                      </div>
+            <div class="col-12 col-md-6 col-lg-4 mb-4 ${service.category}">
+            <div class="news-card">
+                  <img class="news-card__image" src="${service.image}" alt="${service.title}">
+                  <div class="news-card__text-wrapper">
+                    <h2 class="news-card__title">${service.title}</h2>
+                    <div class="news-card__post-date">${service.price} грн</div>
+                    <div class="news-card__details-wrapper">
+                      <p class="news-card__excerpt">${service.description}</p>
+                      <button class="news-card__read-more buy-service" id="sreviceSend" data-id="${service.id}" data-toggle="modal" data-target="#modal-services">Замовити</button>
                     </div>
-                </div>
-                </div>
+                  </div>
+          </div>
+              </div>
             `
-          } else {
-            productListDomString += `
-              <div class="col-12 col-lg-6 mb-4 ${service.category}">
-              <div class="card">
-                <div class="row no-gutters">
-                    <div class="col-md-5">
-                        <img class="card-img-top h-100" src="${service.image}"  alt="${service.title}">
-                    </div>
-                    <div class="col-md-7">
-                        <div class="card-body">
-                            <h3 class="card-title">${service.title}</h3>
-                            <p class="card-text">${service.description}</p>
-                            <button class="btn-main btn-accent btn-service buy-service" id="sreviceSend" data-id="${service.id}" data-toggle="modal" data-target="#modal-services">Замовити</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            </div>
-              `;
-          }
+          // } else {
+          //   productListDomString += `
+          //   <div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-3 ${service.category}">
+          //   <article class="card">
+          //       <div class="thumb"></div>
+          //       <div class="infos">
+          //           <h2 class="title">${service.title}<span>${service.price}</span></h2>
+          //           <h3 class="date">november 2 - 4</h3>
+          //           <h3 class="seats">seats remaining: 2</h3>
+          //           <p class="txt">${service.description}</h3>
+          //           <button class="btn-main btn-accent btn-service buy-service" id="sreviceSend" data-id="${service.id}" data-toggle="modal" data-target="#modal-services">Замовити</button>
+          //       </div>
+          //   </article>
+          //  </div>
+          //     `;
+          // }
         });
       this.containerSecvicesHolistic.innerHTML = productListDomString;
       this.conteinerServicesTerraude.innerHTML = productListDomString;
@@ -201,7 +194,7 @@ class ProductList {
     document
       .querySelectorAll('.btnTab')
       .forEach(button =>
-        button.addEventListener('mouseover', event =>
+        button.addEventListener('click', event =>
           this.handleTabProduct(event)
         )
       );
