@@ -21,7 +21,7 @@ class SecviceList {
                   <img class="news-card__image" src="${service.image}" alt="${service.title}">
                   <div class="news-card__text-wrapper">
                     <h2 class="news-card__title">${service.title}</h2>
-                    <div class="news-card__post-date">${service.price} грн</div>
+                    <div class="news-card__post-date"><b>${service.price}</b> грн</div>
                     <div class="news-card__details-wrapper">
                       <p class="news-card__excerpt">${service.description}</p>
                       <button class="news-card__read-more buy-service" id="sreviceSend" data-id="${service.id}" data-toggle="modal" data-target="#modal-services">Замовити</button>
