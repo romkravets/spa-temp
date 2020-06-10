@@ -367,7 +367,7 @@ body.offcanvas-active {
     height: 100%;
     display: block;
     object-fit: cover;
-    transition: transform 3s ease;
+    transition: transform 1s ease;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     position: relative;
@@ -379,7 +379,7 @@ body.offcanvas-active {
     bottom: 0rem;
     padding: 1rem;
     color: var(--color-light);
-    transition: background-color 1.5s ease;
+    transition: background-color 1.3s ease;
 }
 
 .news-card__title {
@@ -584,7 +584,6 @@ body.offcanvas-active {
 
 .footer-section .social-media li a::before {
     font-size: 15px;
-    /* font-family: "FontAwesome"; */
     background-image: url('../img/icons/open-menu.svg');
     width: 10px;
     height: 10px;
@@ -621,6 +620,18 @@ body.offcanvas-active {
 /* Footer-section */
 /* Prodact section */
 
+
+.service-cart-img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    transition: transform 3s ease;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    position: relative;
+}
+
 .products-section .card .card-title {
     font-size: 18px;
     font-weight: 400;
@@ -635,6 +646,7 @@ body.offcanvas-active {
     display: none;
 }
 
+
 .medicafarm {
     display: block;
 }
@@ -646,8 +658,13 @@ body.offcanvas-active {
     border-bottom: none;
 }
 
+.nav-tabs .nav-item .nav-link {
+    border: 2px solid  #37325a;
+    border-radius: 0;
+}
+
 .nav-tabs .nav-item .nav-link#btnOne  {
-    background: url(../img/icons/logo-medicafarm.png) no-repeat center center;
+    background: url('../img/icons/logo-medicafarm.png') no-repeat center center;
     height: 56px;
     background-size: contain;
     padding: 12px 11px 11px;
@@ -656,7 +673,18 @@ body.offcanvas-active {
 }
 
 .nav-tabs .nav-item .nav-link#btnTwo  {
-    background: url(../img/icons/logo-effiderm.png) no-repeat center center;
+    background: url('../img/icons/logo-effiderm.png') no-repeat center center;
+    height: 56px;
+    width: 200px;
+    background-size: contain;
+    padding: 12px 11px 11px;
+    background-origin: content-box;
+    /* border-left: 1px; */
+    margin-left: 10px;
+}
+
+.nav-tabs .nav-item.show .nav-link#btnTwo, .nav-tabs .nav-link#btnTwo.active {
+    background: rgb(238, 241, 243) url('../img/icons/logo-effiderm.png') no-repeat center center;
     height: 56px;
     width: 200px;
     background-size: contain;
@@ -664,19 +692,21 @@ body.offcanvas-active {
     background-origin: content-box;
 }
 
-.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
-    /* border-color: transparent;
-    color: transparent;
-    background-color: transparent;
-    border-bottom: 1px solid var(--accent-color);
-    transition: var(--main-transition); */
+.nav-tabs .nav-item.show .nav-link#btnOne, .nav-tabs .nav-link#btnOne.active {
+    background: rgb(238, 241, 243) url('../img/icons/logo-medicafarm.png') no-repeat center center;
+    height: 56px;
+    width: 200px;
+    background-size: contain;
+    padding: 12px 11px 11px;
+    background-origin: content-box;
 }
 
-.nav-tabs .nav-link:focus, .nav-tabs .nav-link:hover {
-    /* border-color: transparent;
-    border-bottom: 1px solid var(--accent-color);
-    transition: var(--main-transition); */
-}
+@media (max-width: 480px) {
+    .nav-tabs .nav-item .nav-link#btnTwo  {
+        border-width: 2px;
+        margin-top: 20px;
+    }
+ }
 
 .alert {
     position: fixed;
