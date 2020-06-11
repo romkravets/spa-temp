@@ -14,7 +14,6 @@ class SecviceList {
       let productListDomString = '';
       const secvices = await this.productService.getService();
       secvices.forEach((service) => {
-          // if(service.position === 'right') {
             productListDomString += `
             <div class="col-12 col-md-6 col-lg-4 mb-4 ${service.category}">
             <div class="news-card">
@@ -30,22 +29,6 @@ class SecviceList {
               </div>
             </div>
             `
-          // } else {
-          //   productListDomString += `
-          //   <div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-3 ${service.category}">
-          //   <article class="card">
-          //       <div class="thumb"></div>
-          //       <div class="infos">
-          //           <h2 class="title">${service.title}<span>${service.price}</span></h2>
-          //           <h3 class="date">november 2 - 4</h3>
-          //           <h3 class="seats">seats remaining: 2</h3>
-          //           <p class="txt">${service.description}</h3>
-          //           <button class="btn-main btn-accent btn-service buy-service" id="sreviceSend" data-id="${service.id}" data-toggle="modal" data-target="#modal-services">Замовити</button>
-          //       </div>
-          //   </article>
-          //  </div>
-          //     `;
-          // }
         });
       this.containerSecvicesHolistic.innerHTML = productListDomString;
       this.conteinerServicesTerraude.innerHTML = productListDomString;
