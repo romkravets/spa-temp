@@ -31,7 +31,6 @@ $(function () {
  //Moble menu
 });
 
-
 $('form input[type=text]').on('change invalid', function() {
     var textfield = $(this).get(0);
     textfield.setCustomValidity('');

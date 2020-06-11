@@ -333,7 +333,8 @@ body.offcanvas-active {
     border: 0px solid var(--moda-header-color);
     position: relative;
     height: 12rem;
-    overflow: hidden;
+    /* overflow: hidden; */
+    overflow: unset;
     border-radius: 0.5rem;
     flex: 1;
     min-width: 290px;
@@ -408,6 +409,7 @@ body.offcanvas-active {
     max-height: 20rem;
     opacity: 1;
     }
+    
     .news-card:hover .news-card__text-wrapper {
     background-color: rgba(255, 255, 255, 0.9);
     }
@@ -417,6 +419,21 @@ body.offcanvas-active {
     .news-card:hover .news-card__post-date {
     color: rgb(0, 0, 0);
     }
+
+    /* .news-card:visited .news-card__details-wrapper {
+        max-height: 20rem;
+        opacity: 1;
+    }
+    .news-card:visited .news-card__text-wrapper {
+        background-color: rgba(255, 255, 255, 0.9);
+    }
+
+    .news-card:visited .news-card__title {
+        color: var(--accent-color);
+    }
+    .news-card:visited .news-card__post-date {
+        color: rgb(0, 0, 0);
+     } */
 }
 
 @media (max-width: 999px) {

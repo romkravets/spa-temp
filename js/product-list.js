@@ -24,11 +24,11 @@ class SecviceList {
                     <div class="news-card__post-date"><b>${service.price}</b> грн</div>
                     <div class="news-card__details-wrapper">
                       <p class="news-card__excerpt">${service.description}</p>
-                      <button class="news-card__read-more buy-service" id="sreviceSend" data-id="${service.id}" data-toggle="modal" data-target="#modal-services">Замовити</button>
+                      <button class="news-card__read-more buy-service" id="sreviceSend" data-toggle="modal" data-target="#modal-services" data-id="${service.id}">Замовити</button>
                     </div>
                   </div>
-          </div>
               </div>
+            </div>
             `
           // } else {
           //   productListDomString += `
