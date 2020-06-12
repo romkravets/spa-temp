@@ -101,10 +101,10 @@ class TeachingCart {
       const plan = await this.productService.getTeachsById(id);
       cartDomSting += `
                 <div class="row align-items-center ${plan.category}" data-id="${id}">
-                  <div class="col-12 p-0">
+                  <div class="col-12 col-md-5 p-0">
                     <img class="img-fluid" src="${plan.image}" alt="${plan.title}">
                   </div>
-                <div class="col-12 text-center p-0">
+                <div class="col-12 col-md-5 text-center p-0">
                     <div class="mt-3">
                         <h3 id="titlePlan">${plan.title}</h3>
                         <h4 class="text-center mt-3">Вартість:</h4>

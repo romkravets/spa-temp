@@ -748,6 +748,7 @@ body.offcanvas-active {
     .nav-tabs .nav-item .nav-link#btnTwo  {
         border-width: 2px;
         margin-top: 20px;
+        margin-left: 0;
     }
  }
 
