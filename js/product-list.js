@@ -14,45 +14,27 @@ class SecviceList {
       let productListDomString = '';
       const secvices = await this.productService.getService();
       secvices.forEach((service) => {
-          if(service.position === 'right') {
             productListDomString += `
-            <div class="col-12 col-lg-6 mb-4 ${service.category}">
-                    <div class="card">
-                    <div class="row no-gutters">
-                        <div class="col-md-7 order-1 order-md-0"">
-                            <div class="card-body">
-                                <h3 class="card-title">${service.title}</h3>
-                                <p class="card-text">${service.description}</p>
-                                <button class="btn-main btn-accent btn-service buy-service" id="sreviceSend" data-id="${service.id}" data-toggle="modal" data-target="#modal-services">Замовити</button>
-                            </div>
+            <div class="col-12 col-md-6 col-lg-4 mb-4 ${service.category}">
+              <div class="service-item">
+                  <div class="booking-card" style="background-image: url(${service.image})">
+                      <div class="book-container">
+                        <div class="content">
+                          <button class="btn buy-service" id="sreviceSend" data-toggle="modal" data-target="#modal-services" data-id="${service.id}">Замовити</button>
                         </div>
-                        <div class="col-md-5">
-                          <img  class="card-img-top h-100" src="${service.image}" alt="${service.title}">
+                      </div>
+                      <div class="informations-container">
+                        <h2 class="title">${service.title}</h2>
+                        <p class="price">${service.price} грн</p>
+                          <div class="more-information">
+                            <div class="info-and-date-container"></div>
+                            <p class="disclaimer">${service.description}</p>
+                          </div>
                       </div>
                     </div>
                 </div>
-                </div>
+            </div>
             `
-          } else {
-            productListDomString += `
-              <div class="col-12 col-lg-6 mb-4 ${service.category}">
-              <div class="card">
-                <div class="row no-gutters">
-                    <div class="col-md-5">
-                        <img class="card-img-top h-100" src="${service.image}"  alt="${service.title}">
-                    </div>
-                    <div class="col-md-7">
-                        <div class="card-body">
-                            <h3 class="card-title">${service.title}</h3>
-                            <p class="card-text">${service.description}</p>
-                            <button class="btn-main btn-accent btn-service buy-service" id="sreviceSend" data-id="${service.id}" data-toggle="modal" data-target="#modal-services">Замовити</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            </div>
-              `;
-          }
         });
       this.containerSecvicesHolistic.innerHTML = productListDomString;
       this.conteinerServicesTerraude.innerHTML = productListDomString;
@@ -91,7 +73,7 @@ class TeachingList {
         const teachs = await this.productService.getTeachs();
         teachs.forEach((teach) => {
           productListDomString += `
-                        <div class="col-lg-4 mb-4 mb-lg-0 table-content wow fadeInDown animated animated" data-wow-delay="0.2s" style="visibility: visible; -webkit-animation-delay: 0.2s; -moz-animation-delay: 0.2s; animation-delay: 0.2s;">
+                        <div class="col-lg-4 mb-5 mb-lg-0 table-content wow fadeInDown animated animated" data-wow-delay="0.2s" style="visibility: visible; -webkit-animation-delay: 0.2s; -moz-animation-delay: 0.2s; animation-delay: 0.2s;">
                              <div class="table-item ${teach.category}">
                                 <h3>${teach.title}</h3>
                                 <ul>
@@ -100,7 +82,7 @@ class TeachingList {
                                     <li>Hot Stone Massage</li>
                                     <li>Body Polish (1 hr)</li>
                                 </ul>
-                                <button class="btn-main btn-accent buy-teach order" data-toggle="modal" data-target="#modal-teaching" data-id="${teach.id}">Записатись</button>
+                                <button class="btn-main buy-teach order" data-toggle="modal" data-target="#modal-teaching" data-id="${teach.id}">Записатись</button>
                             </div>
                         </div>
                     `;
@@ -195,13 +177,6 @@ class ProductList {
       .querySelectorAll('.btnTab')
       .forEach(button =>
         button.addEventListener('click', event =>
-          event.stopPropagation()
-        )
-      );
-    document
-      .querySelectorAll('.btnTab')
-      .forEach(button =>
-        button.addEventListener('mouseover', event =>
           this.handleTabProduct(event)
         )
       );

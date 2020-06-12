@@ -2,6 +2,8 @@ new SecviceList(new ServiceCart());
 new TeachingList(new TeachingCart());
 new ProductList(new Cart());
 
+new WOW().init();
+
 
 $(function () {
  $("[data-trigger]").on("click", function(){
@@ -39,8 +41,4 @@ $('form input[type=text]').on('change invalid', function() {
     textfield.setCustomValidity('Заповніть будь ласка пусте поле');
     }
 });
-
-$('.nav-tabs .nav-link').hover(function() {
-    $(this).trigger('click');
-}, function() { });
 

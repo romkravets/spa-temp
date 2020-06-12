@@ -20,8 +20,8 @@ app.post('/order', (req, res) => {
     port: 587,
     secure: false, // true for 465, false for other ports
     auth: {
-      user: 'jovan78@ethereal.email', // generated ethereal user
-      pass: 'VJ3VWHf21F9sjR1Rzk', // generated ethereal password
+      user: 'roxanne.dach99@ethereal.email', // generated ethereal user
+      pass: 'RHcn7gYxYMTR6Pu5cE', // generated ethereal password
     },
   });
 

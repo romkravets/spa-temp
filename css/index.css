@@ -97,6 +97,8 @@ html body {
     text-decoration: none;
     border: none;
     border-radius: 0;
+    text-transform: uppercase;
+    color: var(--color-light);
 }
 
 .btn-main:focus {
@@ -104,13 +106,13 @@ html body {
 }
 
 .btn-accent {
-    background: none repeat scroll 0 0 var(--button-accent-color);
+    background: linear-gradient(180deg, #090810 0%, #171236 100%);
     color: rgb(255, 255, 255);
     text-transform: uppercase;
 }
 
 .btn-accent:hover {
-    background: none repeat scroll 0 0 var(--button-accent-hover);
+    background:  linear-gradient(180deg, #37325a 0%, #2d246b 100%);
     transition: var(--main-transition);
 }
 
@@ -123,15 +125,16 @@ html body {
     text-transform: uppercase;
 }
 
+
 /* Button */
 /* Sections base style */
 .main-container {
-    padding: 80px 0 105px;
+    padding: 80px 0 105px 0;
 }
 
 @media only screen and (max-width: 768px) {
     .main-container {
-        padding: 50px 0 75px;
+        padding: 50px 0 75px 0;
     }
 }
 
@@ -297,16 +300,6 @@ body.offcanvas-active {
 }
 
 /* Card display */
-/*Service section*/
-.services-img-small {
-    width: 211px;
-    height: 211px;
-}
-
-.services .card {
-    max-width: 600px;
-    border-radius: 0;
-}
 
 .services h2 {
     display: inline-block;
@@ -317,12 +310,6 @@ body.offcanvas-active {
     .services .title {
         font-size: 1.5rem;
     }
-}
-
-.services h3 {
-    font-size: 22px;
-    display: inline-block;
-    margin-bottom: 10px;
 }
 
 .services .title-service {
@@ -338,18 +325,177 @@ body.offcanvas-active {
     }
 }
 
-.services p {
-    color: var(--color-paragraph);
-    line-height: 20px;
-}
-
 .services .bg-service-dark {
     background: var(--bg-section-darken);
 }
 
-.services .service {
+
+.service-item .booking-card {
+    position: relative;
+    display: flex;
+    flex: 0 0 300px;
+    flex-direction: column;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    overflow: hidden;
+    background-position: center center;
+    background-size: cover;
+    text-align: center;
+    color: #0a4870;
+    transition: .3s;
+    box-shadow: 0 3px 13px rgba(0,0,0,.16), 0 7px 10px rgba(0,0,0,.24);
+  }
+  .service-item .booking-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(10, 72, 112, 0);
+    transition: .3s;
+  }
+  .service-item .booking-card .book-container {
+    height: 200px;
+  }
+  .service-item .booking-card .book-container .content {
+    position: relative;
+    opacity: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    transform: translateY(-200px);
+    transition: .3s;
+  }
+  .service-item .booking-card .book-container .content .btn {
+    border: 3px solid var(--color-light);
+    padding: 10px 15px;
+    background: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.3em;
+    color: var(--color-light);
+    cursor: pointer;
+    transition: .3s;
+  }
+  .service-item .booking-card .book-container .content .btn:hover {
     background: var(--color-light);
-}
+    border: 0px solid var(--color-light);
+    color: rgb(10, 72, 112);
+  }
+  .service-item .booking-card .informations-container {
+    flex: 1 0 auto;
+    padding: 20px;
+    background: rgb(240, 240, 240);
+    transform: translateY(90px);
+    transition: .3s;
+  }
+  .service-item .booking-card .informations-container .title {
+    position: relative;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 1.2em;
+  }
+  .service-item .booking-card .informations-container .title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    width: 50px;
+    margin: auto;
+    background: rgb(10, 72, 112);
+  }
+  .service-item .booking-card .informations-container .price {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  .service-item .booking-card .informations-container .price .icon {
+    margin-right: 10px;
+  }
+  .service-item .booking-card .informations-container .more-information {
+    opacity: 0;
+    transition: .3s;
+  }
+  .service-item .booking-card .informations-container .more-information .info-and-date-container {
+    display: flex;
+  }
+  .service-item .booking-card .informations-container .more-information .info-and-date-container .box {
+    flex: 1 0;
+    padding: 15px;
+    margin-top: 20px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    background: var(--color-light);
+    font-weight: bold;
+    font-size: 0.9em;
+  }
+  .service-item .booking-card .informations-container .more-information .info-and-date-container .box .icon {
+    margin-bottom: 5px;
+  }
+  .service-item .booking-card .informations-container .more-information .info-and-date-container .box.info {
+    color: rgb(236, 153, 44);
+    margin-right: 10px;
+  }
+  .service-item .booking-card .informations-container .more-information .disclaimer {
+    margin-top: 20px;
+    font-size: 0.8em;
+    color: rgb(125, 125, 125);
+  }
+  .service-item .booking-card:hover::before {
+    background: rgba(10, 72, 112, 0.6);
+  }
+  .service-item .booking-card:hover .book-container .content {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+  .service-item .booking-card:hover .informations-container {
+    transform: translateY(0px);
+  }
+  .service-item .booking-card:hover .informations-container .more-information {
+    opacity: 1;
+  }
+
+  @media (max-width: 768px) {
+    .service-item .booking-card::before {
+      background: rgba(10, 72, 112, 0.6);
+    }
+    .service-item .booking-card .book-container .content {
+      opacity: 1;
+      transform: translateY(0px);
+    }
+    .service-item .booking-card .informations-container {
+      transform: translateY(0px);
+    }
+    .service-item .booking-card .informations-container .more-information {
+      opacity: 1;
+    }
+  }
+  .credits {
+    display: table;
+    background: rgb(10, 72, 112);
+    color: var(--color-light);
+    line-height: 25px;
+    margin: 10px auto;
+    padding: 20px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    text-align: center;
+  }
+  .credits a {
+    color: rgb(227, 235, 241);
+  }
+
+
 
 /*Service section*/
 .trachining-section {
@@ -473,7 +619,6 @@ body.offcanvas-active {
 
 .footer-section .social-media li a::before {
     font-size: 15px;
-    /* font-family: "FontAwesome"; */
     background-image: url('../img/icons/open-menu.svg');
     width: 10px;
     height: 10px;
@@ -509,40 +654,25 @@ body.offcanvas-active {
 
 /* Footer-section */
 /* Prodact section */
-.card {
+
+
+.service-cart-img {
+    width: 100%;
     height: 100%;
+    display: block;
+    object-fit: cover;
+    transition: transform 3s ease;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    position: relative;
 }
 
-.card:hover {
-    box-shadow: 0 5px 10px 0 rgba(0,0,0,.2);
+.products-section .card {
     transition: var(--main-transition);
 }
 
-.card .card-title::after {
-    content: '';
-    height: 44px;
-    left: 0;
-    right: 0;
-    position: absolute;
-    bottom: 0;
-    background: -webkit-linear-gradient(top,rgba(255,255,255,0),#fff 100%,#fff 10%,#fff);
-    background: -ms-linear-gradient(top,rgba(255,255,255,0),#fff 100%,#fff 10%,#fff);
-    background: linear-gradient(to bottom ,rgba(255,255,255,0),#fff 100%,#fff 10%,#fff);
-}
-
-.services .card .card-title {
-    font-weight: 400;
-    margin: 10px 0 0 0;
-    height: 70px;
-    position: relative;
-    overflow: hidden;
-    width: 100%;
-}
-
-@media (max-width: 768px) {
-    .services .card .card-title {
-        height: 50px;
-    }
+.products-section .card:hover {
+    box-shadow: 0 3px 13px rgba(0,0,0,.16), 0 7px 10px rgba(0,0,0,.24);
 }
 
 .products-section .card .card-title {
@@ -559,9 +689,6 @@ body.offcanvas-active {
     display: none;
 }
 
-.card .card-body {
-    padding: 10px;
-}
 
 .medicafarm {
     display: block;
@@ -574,34 +701,56 @@ body.offcanvas-active {
     border-bottom: none;
 }
 
-.nav-tabs .nav-item {
-    border: 1px solid transparent;
-    min-height: 100px;
-    background: var(--moda-header-color);
+.nav-tabs .nav-item .nav-link {
+    border: 2px solid  #37325a;
+    border-radius: 0;
 }
 
-.nav-tabs .nav-link {
-    padding-bottom: 42%;
-    border-bottom: 1px solid transparent;
+.nav-tabs .nav-item .nav-link#btnOne  {
+    background: url('../img/icons/logo-medicafarm.png') no-repeat center center;
+    height: 56px;
+    background-size: contain;
+    padding: 12px 11px 11px;
+    width: 200px;
+    background-origin: content-box;
 }
 
-.nav-tabs .nav-link img {
-    max-width: 176px;
+.nav-tabs .nav-item .nav-link#btnTwo  {
+    background: url('../img/icons/logo-effiderm.png') no-repeat center center;
+    height: 56px;
+    width: 200px;
+    background-size: contain;
+    padding: 12px 11px 11px;
+    background-origin: content-box;
+    /* border-left: 1px; */
+    margin-left: 10px;
 }
 
-.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
-    border-color: transparent;
-    color: transparent;
-    background-color: transparent;
-    border-bottom: 1px solid var(--accent-color);
-    transition: var(--main-transition);
+.nav-tabs .nav-item.show .nav-link#btnTwo, .nav-tabs .nav-link#btnTwo.active {
+    background: rgb(238, 241, 243) url('../img/icons/logo-effiderm.png') no-repeat center center;
+    height: 56px;
+    width: 200px;
+    background-size: contain;
+    padding: 12px 11px 11px;
+    background-origin: content-box;
 }
 
-.nav-tabs .nav-link:focus, .nav-tabs .nav-link:hover {
-    border-color: transparent;
-    border-bottom: 1px solid var(--accent-color);
-    transition: var(--main-transition);
+.nav-tabs .nav-item.show .nav-link#btnOne, .nav-tabs .nav-link#btnOne.active {
+    background: rgb(238, 241, 243) url('../img/icons/logo-medicafarm.png') no-repeat center center;
+    height: 56px;
+    width: 200px;
+    background-size: contain;
+    padding: 12px 11px 11px;
+    background-origin: content-box;
 }
+
+@media (max-width: 480px) {
+    .nav-tabs .nav-item .nav-link#btnTwo  {
+        border-width: 2px;
+        margin-top: 20px;
+        margin-left: 0;
+    }
+ }
 
 .alert {
     position: fixed;
