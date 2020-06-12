@@ -31,26 +31,7 @@ $(function () {
     $("body").removeClass("offcanvas-active");
   });
  //Moble menu
-
-    // $('.buy-service').click(function(){
-    //     $('#modal-services').modal({show:true});
-    // });
-
-    // /* blur on modal open, unblur on close */
-    // $('#modal-services').on('show.bs.modal', function () {
-    //     // $(".news-card").mouseover();
-    // })
-
-    // $('#modal-services').on('hide.bs.modal', function () {
-    //     // $( ".news-card" ).hover(function() {
-    //         $( ".news-card" ).mouseover();
-    //     //   });
-    // })
 });
-
-
-
-
 
 
 $('form input[type=text]').on('change invalid', function() {
@@ -60,8 +41,4 @@ $('form input[type=text]').on('change invalid', function() {
     textfield.setCustomValidity('Заповніть будь ласка пусте поле');
     }
 });
-
-$('.nav-tabs .nav-link').hover(function() {
-    $(this).trigger('click');
-}, function() { });
 
