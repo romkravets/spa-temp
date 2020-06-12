@@ -2,6 +2,8 @@ new SecviceList(new ServiceCart());
 new TeachingList(new TeachingCart());
 new ProductList(new Cart());
 
+new WOW().init();
+
 
 $(function () {
  $("[data-trigger]").on("click", function(){
