@@ -666,9 +666,13 @@ body.offcanvas-active {
     backface-visibility: hidden;
     position: relative;
 }
+
+.products-section .card {
+    transition: var(--main-transition);
+}
+
 .products-section .card:hover {
     box-shadow: 0 3px 13px rgba(0,0,0,.16), 0 7px 10px rgba(0,0,0,.24);
-
 }
 
 .products-section .card .card-title {
