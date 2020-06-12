@@ -344,6 +344,7 @@ body.offcanvas-active {
     text-align: center;
     color: #0a4870;
     transition: .3s;
+    box-shadow: 0 3px 13px rgba(0,0,0,.16), 0 7px 10px rgba(0,0,0,.24);
   }
   .service-item .booking-card::before {
     content: '';
@@ -389,7 +390,7 @@ body.offcanvas-active {
     flex: 1 0 auto;
     padding: 20px;
     background: rgb(240, 240, 240);
-    transform: translateY(104px);
+    transform: translateY(90px);
     transition: .3s;
   }
   .service-item .booking-card .informations-container .title {
@@ -664,6 +665,10 @@ body.offcanvas-active {
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     position: relative;
+}
+.products-section .card:hover {
+    box-shadow: 0 3px 13px rgba(0,0,0,.16), 0 7px 10px rgba(0,0,0,.24);
+
 }
 
 .products-section .card .card-title {
