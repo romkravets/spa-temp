@@ -73,7 +73,7 @@ class TeachingList {
         const teachs = await this.productService.getTeachs();
         teachs.forEach((teach) => {
           productListDomString += `
-                        <div class="col-lg-4 mb-4 mb-lg-0 table-content wow fadeInDown animated animated" data-wow-delay="0.2s" style="visibility: visible; -webkit-animation-delay: 0.2s; -moz-animation-delay: 0.2s; animation-delay: 0.2s;">
+                        <div class="col-lg-4 mb-5 mb-lg-0 table-content wow fadeInDown animated animated" data-wow-delay="0.2s" style="visibility: visible; -webkit-animation-delay: 0.2s; -moz-animation-delay: 0.2s; animation-delay: 0.2s;">
                              <div class="table-item ${teach.category}">
                                 <h3>${teach.title}</h3>
                                 <ul>
