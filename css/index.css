@@ -904,7 +904,7 @@ input:focus, input[type]:focus, .uneditable-input:focus {
     width: 47px;
     height: 47px;
     border-radius: 50%;
-    background: rgba(0, 0, 0, 0.7);
+    background: rgb(255, 255, 255);
     border: 0 none;
     text-align: center;
     color: #FFF;
@@ -971,9 +971,9 @@ input:focus, input[type]:focus, .uneditable-input:focus {
   }
   .gallery-slider__thumbnails .item .img-fill {
     height: 70px;
-    background: white;
+    background: transparent;
     cursor: pointer;
-    border: 5px solid white;
+    border: 5px solid transparent;
     text-align: center;
   }
   .gallery-slider__thumbnails .item .img-fill img {
@@ -1001,10 +1001,11 @@ input:focus, input[type]:focus, .uneditable-input:focus {
     top: 50%;
     -webkit-transform: translateY(-50%);
             transform: translateY(-50%);
-    background: rgba(0, 0, 0, 0.6);
-    color: #FFF;
+    background: transparent;
+    color: rgb(255, 255, 255);
     border: 0 none;
     z-index: 15;
+    outline: none;
   }
   .gallery-slider__thumbnails .next-arrow svg, .gallery-slider__thumbnails .prev-arrow svg {
     top: 2px;
@@ -1039,4 +1040,3 @@ input:focus, input[type]:focus, .uneditable-input:focus {
     padding: 0 7.5px;
     outline: none;
   }
-  

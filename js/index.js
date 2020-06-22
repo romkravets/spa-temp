@@ -32,43 +32,6 @@ $(function () {
   });
  //Moble menu
 
-$(".gallery").slick({
-    slidesToShow: 1,
-    //variableWidth: true,
-    //centerMode: true,
-    variableWidth: true,
-    autoplay: true,
-    cssEase: "ease",
-    dots: false,
-    prevArrow: '<span class="prev"><img class="img-fluid rotate-icon-left" src="img/icons/next.svg"></img></span>',
-    nextArrow: '<span class="next"><img class="img-fluid" src="img/icons/next.svg"></img></span>',
-    // responsive: [{
-    //     breakpoint: 1024,
-    //     settings: {
-    //       slidesToShow: 5,
-    //       centerMode: true,
-    //     },
-    //   },
-    //   {
-    //     breakpoint: 992,
-    //     settings: {
-    //       slidesToShow: 4,
-    //       centerMode: true,
-    //     },
-    //   },
-    //   {
-    //     breakpoint: 768,
-    //     settings: {
-    //       slidesToShow: 1,
-    //       centerMode: true,
-    //     },
-    //   },
-    // ],
-  })
-  .on('setPosition', function (event, slick) {
-    slick.$slides.css('height', slick.$slideTrack.height() + 'px');
-});
-
 });
 
 
@@ -81,21 +44,12 @@ $('form input[type=text]').on('change invalid', function() {
 });
 
 
-/*
-		variables
-	*/
+var $imagesSlider = $(".gallery-slider .gallery-slider__images>div"),
+$thumbnailsSlider = $(".gallery-slider__thumbnails>div");
 
-    var $imagesSlider = $(".gallery-slider .gallery-slider__images>div"),
-    $thumbnailsSlider = $(".gallery-slider__thumbnails>div");
 
-/*
-sliders
-*/
-
-// images options
 $imagesSlider.slick({
   speed:300,
-//   autoplay: true,
   slidesToShow:1,
   slidesToScroll:1,
   cssEase:'linear',
@@ -106,11 +60,9 @@ $imagesSlider.slick({
   nextArrow:'.gallery-slider__images .next-arrow'
 });
 
-// thumbnails options
 $thumbnailsSlider.slick({
    speed:300,
   slidesToShow:5,
-//   autoplay: true,
   slidesToScroll:1,
   cssEase:'linear',
   centerMode:true,
@@ -143,34 +95,3 @@ $thumbnailsSlider.slick({
       }
   ]
 });
-
-/* 
-captions
-*/
-
-// var $caption = $('.gallery-slider .caption');
-
-// // get the initial caption text
-// var captionText = $('.gallery-slider__images .slick-current img').attr('alt');
-// updateCaption(captionText);
-
-// // hide the caption before the image is changed
-// $imagesSlider.on('beforeChange', function(event, slick, currentSlide, nextSlide){
-//   $caption.addClass('hide');
-// });
-
-// // update the caption after the image is changed
-// $imagesSlider.on('afterChange', function(event, slick, currentSlide, nextSlide){
-//   captionText = $('.gallery-slider__images .slick-current img').attr('alt');
-//   updateCaption(captionText);
-// });
-
-// function updateCaption(text) {
-//   // if empty, add a no breaking space
-//   if (text === '') {
-//       text = '&nbsp;';
-//   }
-//   $caption.html(text);
-//   $caption.removeClass('hide');
-// }
-
