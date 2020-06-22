@@ -374,7 +374,7 @@ body.offcanvas-active {
     transform: translateY(-200px);
     transition: .3s;
   }
-  .service-item .booking-card .book-container .content .btn {
+  /* .service-item .booking-card .book-container .content .btn {
     border: 3px solid var(--color-light);
     padding: 10px 15px;
     background: none;
@@ -384,8 +384,8 @@ body.offcanvas-active {
     color: var(--color-light);
     cursor: pointer;
     transition: .3s;
-  }
-  .service-item .booking-card .book-container .content .btn:hover {
+  } */
+  /* .service-item .booking-card .book-container .content .btn:hover {
     background: var(--color-light);
     border: 0px solid var(--color-light);
     color: rgb(10, 72, 112);
@@ -400,11 +400,11 @@ body.offcanvas-active {
   .service-item .booking-card .informations-container .title {
     position: relative;
     padding-bottom: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 10px; */
     font-weight: bold;
     font-size: 1.2em;
   }
-  .service-item .booking-card .informations-container .title::after {
+  /* .service-item .booking-card .informations-container .title::after {
     content: '';
     position: absolute;
     bottom: 0;
@@ -414,8 +414,8 @@ body.offcanvas-active {
     width: 50px;
     margin: auto;
     background: rgb(10, 72, 112);
-  }
-  .service-item .booking-card .informations-container .price {
+  } */
+  /* .service-item .booking-card .informations-container .price {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -441,8 +441,8 @@ body.offcanvas-active {
     background: var(--color-light);
     font-weight: bold;
     font-size: 0.9em;
-  }
-  .service-item .booking-card .informations-container .more-information .info-and-date-container .box .icon {
+  } */
+  /* .service-item .booking-card .informations-container .more-information .info-and-date-container .box .icon {
     margin-bottom: 5px;
   }
   .service-item .booking-card .informations-container .more-information .info-and-date-container .box.info {
@@ -453,8 +453,8 @@ body.offcanvas-active {
     margin-top: 20px;
     font-size: 0.8em;
     color: rgb(125, 125, 125);
-  }
-  .service-item .booking-card:hover::before {
+  } */
+  /* .service-item .booking-card:hover::before {
     background: rgba(10, 72, 112, 0.6);
   }
   .service-item .booking-card:hover .book-container .content {
@@ -466,7 +466,7 @@ body.offcanvas-active {
   }
   .service-item .booking-card:hover .informations-container .more-information {
     opacity: 1;
-  }
+  } */
 
   @media (max-width: 768px) {
     .service-item .booking-card::before {
@@ -483,7 +483,7 @@ body.offcanvas-active {
       opacity: 1;
     }
   }
-  .credits {
+  /* .credits {
     display: table;
     background: rgb(10, 72, 112);
     color: var(--color-light);
@@ -497,7 +497,7 @@ body.offcanvas-active {
   }
   .credits a {
     color: rgb(227, 235, 241);
-  }
+  } */
 
 
 
@@ -998,13 +998,11 @@ input:focus, input[type]:focus, .uneditable-input:focus {
 
 .gallery-slider__thumbnails:before {
   left: 0;
-  /* background: -webkit-gradient(linear, left top, right top, from(#e6e6e6), to(rgba(230, 230, 230, 0))); */
   background: linear-gradient(to right, #e6e6e6 0%, rgba(230, 230, 230, 0) 100%);
 }
 
 .gallery-slider__thumbnails:after {
   right: 0;
-  /* background: -webkit-gradient(linear, left top, right top, from(rgba(230, 230, 230, 0)), to(#e6e6e6)); */
   background: linear-gradient(to right, rgba(230, 230, 230, 0) 0%, #e6e6e6 100%);
 }
 
