@@ -15,15 +15,14 @@ class SecviceList {
       const secvices = await this.productService.getService();
       secvices.forEach((service) => {
             productListDomString += `
-            <div class="col-12 col-md-6 col-lg-4 mb-4 ${service.category}">
+            <div class="col-12 col-md-6 col-lg-4 mb-4 wow fadeInDown ${service.category}">
               <div class="service-item">
-                  <div class="booking-card" style="background-image: url(${service.image}); min-height: 300px; display:flex; justify-content: flex-end">
+                  <div class="booking-card" style="background-image: url(${service.image});">
                     <button class="btn buy-service" id="sreviceSend" data-toggle="modal" data-target="#modal-services" data-id="${service.id}">${service.title}</button>
                     </div>
                 </div>
             </div>
             `
-            // <h2 class="title">${service.title}</h2>
         });
       this.containerSecvicesHolistic.innerHTML = productListDomString;
       this.conteinerServicesTerraude.innerHTML = productListDomString;
