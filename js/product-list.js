@@ -17,24 +17,13 @@ class SecviceList {
             productListDomString += `
             <div class="col-12 col-md-6 col-lg-4 mb-4 ${service.category}">
               <div class="service-item">
-                  <div class="booking-card" style="background-image: url(${service.image})">
-                      <div class="book-container">
-                        <div class="content">
-                          <button class="btn buy-service" id="sreviceSend" data-toggle="modal" data-target="#modal-services" data-id="${service.id}">Замовити</button>
-                        </div>
-                      </div>
-                      <div class="informations-container">
-                        <h2 class="title">${service.title}</h2>
-                        <p class="price">${service.price} грн</p>
-                          <div class="more-information">
-                            <div class="info-and-date-container"></div>
-                            <p class="disclaimer">${service.description}</p>
-                          </div>
-                      </div>
+                  <div class="booking-card" style="background-image: url(${service.image}); min-height: 300px; display:flex; justify-content: flex-end">
+                    <button class="btn buy-service" id="sreviceSend" data-toggle="modal" data-target="#modal-services" data-id="${service.id}">${service.title}</button>
                     </div>
                 </div>
             </div>
             `
+            // <h2 class="title">${service.title}</h2>
         });
       this.containerSecvicesHolistic.innerHTML = productListDomString;
       this.conteinerServicesTerraude.innerHTML = productListDomString;
