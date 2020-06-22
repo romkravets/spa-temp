@@ -503,7 +503,7 @@ body.offcanvas-active {
     min-height: 300px;
     color: var(--color-light);
     font-size: 1.7rem;
-    padding-top: 50%;
+    padding-top: 60%;
 }
 
 .buy-service:hover {
