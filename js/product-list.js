@@ -112,31 +112,14 @@ class ProductList {
     let productListDomString = '';
     const products = await this.productService.getProducts();
     products.forEach((product) => {
-      let messageSaleOrNew = '';
-      let priceSale = '';
-      let saleClass = '';
-      if (product.sale === true) {
-        messageSaleOrNew += `<div class="banner-message sale">sale</div>`;
-        priceSale += `<div class="price-sale">${product.priceSale} ₽</div>`
-        saleClass  = "saleClass";
-      } else {
-        messageSaleOrNew += ``;
-        priceSale += ``;
-        saleClass  = '';
-      }
-      if (product.new === true) {
-        messageSaleOrNew += `<div class="banner-message new">new</div>`;
-      }
-
       productListDomString += `<div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-3 prod ${product.category}">
                   <div class="card product">
-                    ${messageSaleOrNew}
                     <img class="card-img-top card-info-cursor" src="img/products/${product.image[0]}"
                         alt="${product.title}">
                       <div class="card-body d-flex flex-column align-items-start justify-content-between title-wrap">
                         <div class="d-flex w-100 align-items-baseline">
                         <div class="card-price flex-fill d-flex flex-wrap">
-                          <h5 class="${saleClass}">${product.price} грн</h5> ${priceSale}
+                          <h5>${product.price} грн</h5>
                         </div>
                           <button class="btn-main btn-accent btn-product buy" data-toggle="modal" data-target="#modal-products"  data-id="${product.id}" alt="Laboratoties INELDEA. Професійні засоби по догляду за тілом та обличчям MEDICAFARM, EFFIDERM, Франція" title="Замовити">Замовити</button>
                         </div>
