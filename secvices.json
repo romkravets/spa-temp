@@ -9,7 +9,8 @@
        "sale": false,
        "category": "holistic",
        "priceSale": "",
-       "position": "left"
+       "wowDeily": "0.1"
+
    },
    {
        "id": "2",
@@ -21,7 +22,7 @@
        "sale": false,
        "category": "holistic",
        "priceSale": "",
-       "position": "right"
+       "wowDeily": "0.2"
    },
    {
       "id": "3",
@@ -33,7 +34,7 @@
       "sale": false,
       "category": "holistic",
       "priceSale": "",
-      "position": "left"
+      "wowDeily": "0.3"
   },
   {
       "id": "4",
@@ -45,7 +46,7 @@
       "sale": false,
       "category": "holistic",
       "priceSale": "",
-      "position": "right"
+      "wowDeily": "0.4"
    },
    {
       "id": "5",
@@ -57,7 +58,7 @@
       "sale": false,
       "category": "holistic",
       "priceSale": "",
-      "position": "left"
+      "wowDeily": "0.5"
    },
    {
       "id": "6",
@@ -69,7 +70,7 @@
       "sale": false,
       "category": "holistic",
       "priceSale": "",
-      "position": "right"
+      "wowDeily": "0.6"
    },
    {
       "id": "7",
@@ -81,7 +82,7 @@
       "sale": false,
       "category": "terraude",
       "priceSale": "",
-      "position": ""
+      "wowDeily": "0.1"
       },
    {
       "id": "8",
@@ -93,7 +94,7 @@
       "sale": false,
       "category": "programs",
       "priceSale": "",
-      "position": "left"
+      "wowDeily": "0.2"
    },
    {
       "id": "9",
@@ -105,7 +106,7 @@
       "sale": false,
       "category": "programs",
       "priceSale": "",
-      "position": "right"
+      "wowDeily": "0.3"
    },
    {
       "id": "10",
@@ -117,7 +118,7 @@
       "sale": false,
       "category": "programs",
       "priceSale": "",
-      "position": "left"
+      "wowDeily": "0.4"
    },
    {
       "id": "11",
@@ -129,7 +130,7 @@
       "sale": false,
       "category": "programs",
       "priceSale": "",
-      "position": "right"
+      "wowDeily": "0.5"
    },
    {
       "id": "12",
@@ -141,7 +142,7 @@
       "sale": false,
       "category": "programs",
       "priceSale": "",
-      "position": "left"
+      "wowDeily": "0.6"
    },
    {
       "id": "13",
@@ -153,7 +154,7 @@
       "sale": false,
       "category": "programs",
       "priceSale": "",
-      "position": "right"
+      "wowDeily": "0.7"
    },
    {
       "id": "14",
@@ -165,7 +166,7 @@
       "sale": false,
       "category": "programs",
       "priceSale": "",
-      "position": "left"
+      "wowDeily": "0.8"
    },
    {
       "id": "15",
@@ -177,7 +178,7 @@
       "sale": false,
       "category": "programs",
       "priceSale": "",
-      "position": "right"
+      "wowDeily": "0.9"
    }
 ]
 
