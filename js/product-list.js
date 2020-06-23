@@ -16,7 +16,7 @@ class SecviceList {
       const secvices = await this.productService.getService();
         secvices.forEach((service) => {
             productListDomString += `
-            <div class="col-12 col-md-6 col-lg-4 mb-4 wow fadeInDown ${service.category}" data-wow-delay="${service.wowDeily}s">
+            <div class="col-12 col-md-6 col-lg-4 mb-4 wow slideInUp ${service.category}" data-wow-delay="${service.wowDeily}s">
               <div class="service-item">
                   <div class="booking-card" style="background-image: url(${service.image});">
                     <button class="btn buy-service" id="sreviceSend" data-toggle="modal" data-target="#modal-services" data-id="${service.id}">${service.title}</button>
